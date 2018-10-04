@@ -120,15 +120,25 @@
         <h4>Rendered element:</h4>
         <p>Payment options: </p>
         <div class="radiob">
-            <label class="rbutton"><input type="radio" name="radio">
-                Master/Visa
-            </label>
-            <label class="rbutton"><input type="radio" name="radio">
-                Paypal
-            </label>
-            <label class="rbutton"><input type="radio" name="radio">
-                Giftcard
-            </label>
+            <ul>
+                <li>
+                  <input type="radio" id="rbutton1" name="select">
+                  <label for="rbutton1">Credit Card</label>
+                  <div class="check"></div>
+                </li>
+                
+                <li>
+                  <input type="radio" id="rbutton2" name="select">
+                  <label for="rbutton2">Paypal</label>
+                  <div class="check"><div class="inside"></div></div>
+                </li>
+                
+                <li>
+                  <input type="radio" id="rbutton3" name="select">
+                  <label for="rbutton3">Giftcard</label>
+                  <div class="check"><div class="inside"></div></div>
+                </li>
+              </ul>
             
         </div>
       </section>
