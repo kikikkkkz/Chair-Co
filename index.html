@@ -339,7 +339,7 @@
         <h3>Payment Form</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+        <p>.form</p>
 
         <h4>Sample code:</h4>
         <Code>&lt;p&gt;Payment options:&lt;/p&gt;</Code>
@@ -371,16 +371,13 @@
           <code>&lt;a href="#" class="submit-button"&gt;Proceed to checkout&lt;/a&gt;</code>
           <code>&lt;/div&gt;</code>
           
-        
-        
 
         <h4>Rendered element:</h4>
-        <p>Payment options:</p>
        
         <div class="item">
             <h4>Payment Options</h4>
 
-            <div class="radiob">
+            <!-- <div class="radiob">
                 <label class="rbutton"><input type="radio" name="radio">
                     Master/Visa
                 </label>
@@ -392,34 +389,62 @@
                 <label class="rbutton"><input type="radio" name="radio">
                     Giftcard
                 </label>
-            </div>
+            </div> -->
        
-        <div class="form">  
-            <div class="methods">
-                <label for="form-holder">Cardholder Name:</label>
+            <div class="form-element">
+              <label class="container">Credit Card
+              <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
+              <span class="checkmark"></span>
+              </label>
+              <label class="container">Alipay
+              <input type="radio" name="radio" value="alipay" onclick="show2();">
+              <span class="checkmark"></span>
+              </label>
+              <label class="container">WechatPay
+              <input type="radio" name="radio" value="wechatpay" onclick="show3();">
+              <span class="checkmark"></span>
+              </label>
+          </div>
+
+        <div id="div1" class="show">
+          <div class="form">  
+            <div class="methods form-element">
+                <label for="form-holder form-element">Cardholder Name:</label>
                 <input type="text" id="form-holder" placeholder="John Smith"> 
             </div>
 
-            <div class="methods">
+            <div class="methods form-element">
                 <label for="form-card">Card Number:</label>
                 <input type="text" id="form-card" placeholder="1452-3627-1123-1234"> 
             </div>
             
-            <div class="methods">
-                <label for="form-exp">Experiation Date:</label>
-                <input type="text" id="form-exp" placeholder="January">
-                <input type="text" id="form-expd" placeholder="2018">
+            <div class="methods form-element">
+                <label for="form-exp">Expiry Date:</label>
+                <input type="text" id="form-exp" placeholder="Jan">/
+                <input type="text" id="form-expd" placeholder="2020">
             </div>
 
-            <div class="methods">
+            <div class="methods form-element">
                 <label for="form-sec">CVV:</label>
                 <input type="text" id="form-sec" placeholder="123"> 
             </div>
+  
+            <a href="#" class="submit-button">Proceed to checkout</a>
+              
+          </div>
+        </div>
         
-                
-                <a href="#" class="submit-button">Proceed to checkout</a>
-            </div>   
-          </div>   
+        <div id="div2" class="hide">
+          Scan QR Code to pay<br>
+          <img src="img/code1.png" alt="Alipay"><br>
+          Complete payment on phone
+        </div>
+
+        <div id="div3" class="hide">
+            Scan QR Code to pay<br>
+            <img src="img/code2.png" alt="WeChat Pay"><br>
+            Complete payment on phone
+        </div>
       </section>
 
       <section class="element">
@@ -557,3 +582,23 @@
 
   </body>
 </html>
+
+<script>
+    
+  function show1(){
+      document.getElementById('div1').style.display ='block';
+      document.getElementById('div2').style.display ='none';
+      document.getElementById('div3').style.display ='none';
+  }
+  function show2(){
+      document.getElementById('div1').style.display ='none';
+      document.getElementById('div2').style.display = 'block';
+      document.getElementById('div3').style.display ='none';
+  }
+  function show3(){
+      document.getElementById('div1').style.display ='none';
+      document.getElementById('div2').style.display = 'none';
+      document.getElementById('div3').style.display ='block';
+  }
+  
+</script>
