@@ -103,20 +103,20 @@ section {
   border-top:0.3rem rgb(245,184,16) solid; 
 }
 
-.intext-Link{
+.intext-link{
   text-decoration:none;
   color:rgb(110,110,110);
   font-weight:bold;
   
 }
 
-.intext-Link:hover, .intext-Link:focus{
+.intext-link:hover, .intext-link:focus{
   Color:rgb(245,184,16);
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
 
-.intext-Link-exp{
+.intext-link-exp{
   text-decoration:none;
   color:rgb(110,110,110);
   font-weight:bold;
@@ -124,7 +124,7 @@ section {
   
 }
 
-.intext-Link-exp:hover, .intext-Link-exp:focus{
+.intext-link-exp:hover, .intext-link-exp:focus{
   Color:rgb(245,184,16);
   transition-property: background-color; 
   transition-duration: 0.5s;
@@ -139,13 +139,14 @@ section {
   border-radius:1.8rem;
   color:rgb(80,80,80);
   background-color:white;
+  text-transform:uppercase;
 }
 
 .submit-button:hover, .submit-button:focus{
   background-color:rgb(245,184,16);
-    color:white;
-    transition-property: background-color color;
-    transition-duration: 0.7s;
+  color:white;
+  transition-property: background-color;
+  transition-duration: 0.7s;
 }
 
 img{
@@ -265,8 +266,8 @@ padding:0.25rem;
 */
 
 .cart{
-  font-size:0.7rem;
-  padding: 0.5rem;
+  font-size:0.8rem;
+  padding: 0.5rem 0.7rem;
   color:rgb(80,80,80);
   border:0.1rem rgb(245,184,16) solid;
   border-radius:1.5rem;
@@ -275,6 +276,7 @@ padding:0.25rem;
   margin-left:0.75rem;
   margin-right:-6.5rem;
   float:right; 
+  text-transform: uppercase;
 }
 
 .cart:hover, .cart:focus {
@@ -296,31 +298,29 @@ img:hover, img:focus{
   transition-duration: 0.7s;
 }
 
-
-.intext-Link {
+.intext-link {
   text-decoration:none;
   color:rgb(110,110,110);
-  border:0.1 white solid;
   font-size:0.9rem;
   margin-right:0.7rem;
   float:right;
 }
 
-.intext-Link:hover, .intext-Link:focus{
-  Color:rgb(245,184,16);
+.intext-link:hover, .intext-link:focus{
+  color:rgb(245,184,16);
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
 
 #product{
-    padding-top:5rem;
-    padding-bottom:1rem;
+  padding-top:5rem;
+  padding-bottom:1rem;
 }
 
 figure{  
-    padding-top:2rem;
-    padding-bottom:4rem;
-    max-width:18rem;
+  padding-top:2rem;
+  padding-bottom:4rem;
+  max-width:18rem;
 }
 
 .box{
@@ -365,7 +365,6 @@ figure{
 .pay{
   display: wrap;
   flex-wrap:wrap;
-
 }
 
 .form{
