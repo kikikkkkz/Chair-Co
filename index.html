@@ -19,12 +19,6 @@
       </nav>
 
 
-      <h2>Working links</h2>
-      <nav>
-        <a href="product_listing.html">Product Listing Page</a>
-        <a href="checkout.html">Checkout Page</a>
-      </nav>
-
     </header>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -42,7 +36,7 @@
         <code>&lt;a class="intext-Link" href="#"&gt;intext-Link&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <p>This is a <a class="intext-Link" href="#">intext-Link</a> that can be clicked</p>
+        <p>This is a <a class="intext-Link" href="#">intext-Link</a></p>
       </section>
 
 
@@ -119,7 +113,7 @@
 
         <h4>Rendered element:</h4>
         <p>Payment options: </p>
-        <div class="radiob">
+        <!-- <div class="radiob">
             <ul>
                 <li>
                   <input type="radio" id="rbutton1" name="select">
@@ -140,7 +134,30 @@
                 </li>
               </ul>
             
-        </div>
+        </div> -->
+
+        <div class="form-element">
+   
+                
+                <label class="container">Credit Card
+                <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Paypal
+                  <input type="radio" checked="checked" name="radio" value="paypal" onclick="show1();">
+                  <span class="checkmark"></span>
+                  </label>
+                <label class="container">Alipay
+                <input type="radio" name="radio" value="alipay" onclick="show2();">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">WechatPay
+                <input type="radio" name="radio" value="wechatpay" onclick="show3();">
+                <span class="checkmark"></span>
+                </label>
+              
+            </div>
+            
       </section>
 
 
@@ -376,26 +393,40 @@
        
         <div class="item">
             <h4>Payment Options</h4>
-
             <!-- <div class="radiob">
-                <label class="rbutton"><input type="radio" name="radio">
-                    Master/Visa
-                </label>
-
-                <label class="rbutton"><input type="radio" name="radio">
-                   Paypal
-                </label>
-
-                <label class="rbutton"><input type="radio" name="radio">
-                    Giftcard
-                </label>
+                <ul>
+                    <li>
+                      <input type="radio" id="rbutton4" name="radio" onclick="show1();">
+                      <label for="rbutton4">Credit Card</label>
+                      <div class="check"></div>
+                    </li>
+                    
+                    <li>
+                      <input type="radio" id="rbutton5" name="radio" value="Alipay" onclick="show3();">
+                      <label for="rbutton5">Paypal</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    
+                    <li>
+                      <input type="radio" id="rbutton6" name="radio" value="Wechat Pay" onclick="show2();">
+                      <label for="rbutton6">Alipay</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                  </ul>
+                
             </div> -->
        
-            <div class="form-element">
+             <div class="form-element">
+   
+                
               <label class="container">Credit Card
               <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
               <span class="checkmark"></span>
               </label>
+              <label class="container">Paypal
+                <input type="radio" checked="checked" name="radio" value="paypal" onclick="show1();">
+                <span class="checkmark"></span>
+                </label>
               <label class="container">Alipay
               <input type="radio" name="radio" value="alipay" onclick="show2();">
               <span class="checkmark"></span>
@@ -404,6 +435,7 @@
               <input type="radio" name="radio" value="wechatpay" onclick="show3();">
               <span class="checkmark"></span>
               </label>
+            
           </div>
 
         <div id="div1" class="show">
@@ -411,7 +443,7 @@
             <div class="methods form-element">
                 <label for="form-holder form-element">Cardholder Name:</label>
                 <input type="text" id="form-holder" placeholder="John Smith"> 
-            </div>
+            </div> 
 
             <div class="methods form-element">
                 <label for="form-card">Card Number:</label>
