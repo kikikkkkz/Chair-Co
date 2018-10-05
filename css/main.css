@@ -501,22 +501,10 @@ option{
 }
 
 .checkout-button{
-  font-size:0.8rem;
-  padding: 0.5rem 0.7rem;
-  text-decoration: none;
-  border:0.1rem rgb(245,184,16) solid;
-  border-radius:1.8rem;
-  color:rgb(80,80,80);
-  background-color:white;
+ 
   float:right;
 }
 
-.checkout-button:hover, .checkout-button:focus{
-  background-color:rgb(245,184,16);
-    color:white;
-    transition-property: background-color color;
-    transition-duration: 0.7s;
-}
 
 .remove{
   text-decoration:none;
