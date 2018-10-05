@@ -363,7 +363,7 @@ figure{
 } */
   
 .pay{
-  display: wrap;
+  display: flex;
   flex-wrap:wrap;
 }
 
