@@ -107,7 +107,7 @@ section {
   text-decoration:none;
   color:rgb(110,110,110);
   font-weight:bold;
-  padding: 0 0.4rem;
+  
 }
 
 .intext-Link:hover, .intext-Link:focus{
@@ -116,13 +116,27 @@ section {
   transition-duration: 0.5s;
 }
 
+.intext-Link-exp{
+  text-decoration:none;
+  color:rgb(110,110,110);
+  font-weight:bold;
+  padding:0 0.3rem;
+  
+}
+
+.intext-Link-exp:hover, .intext-Link-exp:focus{
+  Color:rgb(245,184,16);
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
 .submit-button{
   display: inline-block;
-  font-size:1.2rem;
-  padding: 0.7rem;
+  font-size:0.8rem;
+  padding: 0.5rem 0.7rem;
   text-decoration: none;
   border:0.1rem rgb(245,184,16) solid;
-  border-radius:1.2rem;
+  border-radius:1.8rem;
   color:rgb(80,80,80);
   background-color:white;
 }
@@ -165,7 +179,6 @@ ul li{
   position: relative;
   float: left;
   width: 100%;
-  height: 3rem;
   padding-bottom:0.3rem;
 
 }
@@ -252,11 +265,11 @@ padding:0.25rem;
 */
 
 .cart{
-  font-size:0.8rem;
+  font-size:0.7rem;
   padding: 0.5rem;
   color:rgb(80,80,80);
   border:0.1rem rgb(245,184,16) solid;
-  border-radius:0.9rem;
+  border-radius:1.5rem;
   text-decoration: none;
   margin-top:2rem;
   margin-left:0.75rem;
@@ -307,7 +320,7 @@ img:hover, img:focus{
 figure{  
     padding-top:2rem;
     padding-bottom:4rem;
-    max-width:20rem;
+    max-width:18rem;
 }
 
 .box{
@@ -331,10 +344,10 @@ figure{
 
   .block{
     padding:3rem;
-    margin-right:3rem;
+    margin-right:6rem;
     border:0.1rem  solid;
     border-color:rgba(245,184,16,0.7) white;
-    width:100%;
+    width:70%;
     margin-top:3rem;
 
     }
@@ -534,5 +547,10 @@ option{
   color:rgb(245,184,16);
   transition-property: color;
 }
+
+#citations li{
+ padding-bottom:0.8rem;
+}
+
 
 
