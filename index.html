@@ -35,10 +35,10 @@
         <p>.intext-Link</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a class="intext-Link" href="#"&gt;intext-Link&lt;/a&gt;</code>
+        <code>&lt;p&gt;This is a&lt;a class="intext-Link" href="#"&gt;intext-Link&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <p>This is a <a class="intext-Link" href="#">intext-Link</a></p>
+        <p>This is a <a class="intext-Link-exp" href="#">intext-Link</a></p>
       </section>
 
 
@@ -107,10 +107,19 @@
         <p>.radio-Button</p>
 
         <h4>Sample code</h4>
-        <code>&lt;div class="radiob"&gt;</code>
-        <code>&lt;lable class="rbutton" &gt; Master/Visa &lt;input type="radio" name="radio"&gt;</code>
-        <code>&lt;lable class="rbutton" &gt; Paypal &lt;input type="radio" name="radio"&gt;</code>
-        <code>&lt;lable class="rbutton" &gt; Giftcard &lt;input type="radio" name="radio"&gt;</code>
+        <code>&lt;div class="form-element"&gt;</code>
+        <code>&lt;label class="container"&gt;Credit Card &lt;/label&gt;</code>
+        <code>&lt;input type="radio" checked="checked" name="radio" value="credit" onclick="show1();"&gt;</code>
+        <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
+        <code>&lt;/label&gt;</code>
+        <code>&lt;label class="container"&gt;Alipay</code>
+        <code>&lt;input type="radio" name="radio" value="alipay" onclick="show2();"&gt;</code>
+        <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
+        <code>&lt;/label&gt;</code>
+        <code>&lt;label class="container"&gt;WechatPay</code>
+        <code>&lt;input type="radio" name="radio" value="wechatpay" onclick="show3();"&gt;</code>
+        <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
+        <code>&lt;/label&gt;</code>
         <code>&lt;/div&gt;</code>
 
         <h4>Rendered element:</h4>
@@ -145,10 +154,6 @@
                 <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
                 <span class="checkmark"></span>
                 </label>
-                <label class="container">Paypal
-                  <input type="radio" checked="checked" name="radio" value="paypal" onclick="show1();">
-                  <span class="checkmark"></span>
-                  </label>
                 <label class="container">Alipay
                 <input type="radio" name="radio" value="alipay" onclick="show2();">
                 <span class="checkmark"></span>
@@ -363,31 +368,19 @@
         <h4>Sample code:</h4>
         <Code>&lt;p&gt;Payment options:&lt;/p&gt;</Code>
 
-        <code>&lt;div class="radiob"&gt;</code>
-        <code>&lt;lable class="rbutton" &gt; Master/Visa &lt;input type="radio" name="radio"&gt;</code>
-        <code>&lt;lable class="rbutton" &gt; Paypal &lt;input type="radio" name="radio"&gt;</code>
-        <code>&lt;lable class="rbutton" &gt; Giftcard &lt;input type="radio" name="radio"&gt;</code>
-        <code>&lt;/div&gt;</code>
-
-        <code>&lt;form&gt;</code>
-          <code>&lt;class="methods"&gt;</code>
-          <code>&lt;label for="form-label"&gt;Cardholder name:&lt;/label&gt;</code>
-          <code>&lt;input type="text" name="form-folder" placeholder="John Smith"&gt;</code>
-          <code>&lt;/div&gt;</code>
-          <code>&lt;class="methods"&gt;</code>
-          <code>&lt;label for="form-label"&gt;Card Number:&lt;/label&gt;</code>
-          <code>&lt;input type="text" name="form-card" placeholder="1452-3627-1123-1234"&gt;</code>
-          <code>&lt;/div&gt;</code>
-          <code>&lt;class="methods"&gt;</code>
-          <code>&lt;label for="form-label"&gt;Expiration Date:&lt;/label&gt;</code>
-          <code>&lt;input type="text" name="form-expm" placeholder="January"&gt;</code>
-          <code>&lt;input type="text" name="form-expd" placeholder="2018"&gt;</code>
-          <code>&lt;/div&gt;</code>
-          <code>&lt;class="methods"&gt;</code>
-          <code>&lt;label for="form-label"&gt;CVV:&lt;/label&gt;</code>
-          <code>&lt;input type="text" name="form-sec" placeholder="123"&gt;</code>
-          <code>&lt;/div&gt;</code>
-          <code>&lt;a href="#" class="submit-button"&gt;Proceed to checkout&lt;/a&gt;</code>
+          <code>&lt;div class="form-element"&gt;</code>
+          <code>&lt;label class="container"&gt;Credit Card &lt;/label&gt;</code>
+          <code>&lt;input type="radio" checked="checked" name="radio" value="credit" onclick="show1();"&gt;</code>
+          <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
+          <code>&lt;/label&gt;</code>
+          <code>&lt;label class="container"&gt;Alipay</code>
+          <code>&lt;input type="radio" name="radio" value="alipay" onclick="show2();"&gt;</code>
+          <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
+          <code>&lt;/label&gt;</code>
+          <code>&lt;label class="container"&gt;WechatPay</code>
+          <code>&lt;input type="radio" name="radio" value="wechatpay" onclick="show3();"&gt;</code>
+          <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
+          <code>&lt;/label&gt;</code>
           <code>&lt;/div&gt;</code>
           
 
@@ -425,10 +418,6 @@
               <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
               <span class="checkmark"></span>
               </label>
-              <label class="container">Paypal
-                <input type="radio" checked="checked" name="radio" value="paypal" onclick="show1();">
-                <span class="checkmark"></span>
-                </label>
               <label class="container">Alipay
               <input type="radio" name="radio" value="alipay" onclick="show2();">
               <span class="checkmark"></span>
@@ -608,6 +597,8 @@
         <li>Theme [brand-img]. Retrieved from <a href="https://lh3.googleusercontent.com/KKsW18_Sk829QV1gJfIuwwj1aBijzJAEKRmpZMHuhx5s_30nIwyepdZyrGh490UHw6O32w=s126">https://lh3.googleusercontent.com/KKsW18_Sk829QV1gJfIuwwj1aBijzJAEKRmpZMHuhx5s_30nIwyepdZyrGh490UHw6O32w=s126</a></li>
         <li>Explore [brand-img]. Retrieved from <a href="http://schooldairy.info/wp-content/uploads/2018/04/minimalist-website-design-inspiration-best-web.jpg">http://schooldairy.info/wp-content/uploads/2018/04/minimalist-website-design-inspiration-best-web.jpg</a></li>
         <li>Furnish [brand-img]. Retrieved from <a href="https://s.tmimgcdn.com/scr/65800/65859-big.jpg">https://s.tmimgcdn.com/scr/65800/65859-big.jpg</a></li>
+        <li>Radio button[radio-button]. Retrived from <a href="https://codepen.io/dhanushbadge/pen/kICBu">https://codepen.io/dhanushbadge/pen/kICBu</a></li>
+        <li>QRcode[QR-code]. Retrived from<a href="https://www.molpay.com/v3/blog/basic-understanding-of-qr-code-payment/">https://www.molpay.com/v3/blog/basic-understanding-of-qr-code-payment/</a></li>
       </ul>
 
     </section>
