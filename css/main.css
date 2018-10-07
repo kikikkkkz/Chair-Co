@@ -69,8 +69,6 @@ nav a:hover, nav a:focus {
   Color:rgb(245,184,16);
   transition-property:color;
   transition-duration:0.5s;
-  
-
 }
 
 code {
@@ -111,22 +109,22 @@ section {
 }
 
 .intext-link:hover, .intext-link:focus{
-  Color:rgb(245,184,16);
-  transition-property: background-color; 
+  color:rgb(245,184,16);
+  transition-property: color; 
   transition-duration: 0.5s;
 }
 
 .intext-link-exp{
+  color:rgb(245,184,16);
   text-decoration:none;
-  color:rgb(110,110,110);
   font-weight:bold;
-  padding:0 0.3rem;
+  padding: 0 0.2rem;
   
 }
 
 .intext-link-exp:hover, .intext-link-exp:focus{
-  Color:rgb(245,184,16);
-  transition-property: background-color; 
+  color:rgba(245,184,16,0.7);
+  transition-property: color; 
   transition-duration: 0.5s;
 }
 
