@@ -4,9 +4,6 @@
 *{
   font-family:Helvetica, sans-serif;
 }
-body {
-  padding: 2rem;
-}
 
 h1 {
   font-family: Open Sans, sans-serif;
@@ -86,15 +83,23 @@ section {
 
 /* Styling for the navigation button */
 .button-nav {
-  font-size:1.5rem;
+  font-size:1.2rem;
   display: inline-block;
   padding: 0.5rem;
+  margin-right:1.5rem;
   color:rgb(80,80,80);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-top:0.3rem white solid;
- 
+  overflow:hidden;
+}
+
+.button-nav a{
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -556,5 +561,23 @@ option{
  padding-bottom:0.8rem;
 }
 
+.navigation {
+  position: fixed;
+  top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
 
+.navigation a{   
+  float:left;
+}
 
+.menu{
+  float:right;
+}
+
+.content {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
