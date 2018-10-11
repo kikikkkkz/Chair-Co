@@ -53,7 +53,7 @@ p {
   line-height: 1.3rem;
 }
 
-nav a{
+/* nav a{
   font-size:1.2rem;
   color:rgb(110,110,110);
   text-decoration:none;
@@ -66,7 +66,7 @@ nav a:hover, nav a:focus {
   Color:rgb(245,184,16);
   transition-property:color;
   transition-duration:0.5s;
-}
+} */
 
 code {
 
@@ -163,7 +163,7 @@ img:hover, img:focus{
   opacity: 0.6;
   box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
 }
-.radiob{
+/* .radiob{
   display: block;
   position: relative;
   margin-bottom:14rem;
@@ -252,7 +252,7 @@ input[type=radio]:checked ~ .check::before{
 
 input[type=radio]:checked ~ label{
   color: rgb(245,184,16);
-}
+} */
 
 
 
@@ -260,9 +260,9 @@ input[type=radio]:checked ~ label{
   TEXT ELEMENTS -------------------
 */
 
-li{
+/* li{
 padding:0.25rem;
-}
+} */
 
 
 /* 
@@ -387,7 +387,7 @@ figure{
   margin: 1.2rem 0;
   display: none;
 }
-
+/* 
 label{
   color:rgb(90,90,90);
   font-size: 1rem;
@@ -395,7 +395,7 @@ label{
   padding:0.2rem;
   display:inline-block;
   width:9rem;
-}
+} */
 
 /*Style input fields*/
 input[type=text]{
