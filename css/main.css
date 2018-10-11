@@ -92,7 +92,7 @@ section {
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  border-top:0.2rem white solid;
+  border-top:0.2rem transparent solid;
   overflow:hidden;
 }
 
@@ -106,6 +106,21 @@ section {
 .button-nav:hover, .button-nav:focus {
   border-top:0.2rem rgb(245,184,16) solid; 
 }
+
+@media screen and (max-width: 52.75em) {
+  .button-nav{
+      margin-right:0.3rem;
+    
+  }
+
+  nav a{
+      font-size:0.6rem;
+  }
+
+  figure{
+      margin:auto;
+  }
+  }
 
 .intext-link{
   text-decoration:none;
@@ -337,6 +352,11 @@ figure{
   display:flex;
   flex-wrap:wrap;
   float:right;
+}
+
+.look{
+  margin-top:5rem;
+  margin-left:3rem;
 }
 
 /* input:hover, input:focus{
