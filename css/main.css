@@ -172,16 +172,26 @@ section {
   transition-duration: 0.7s;
 }
 
-img{
+.click-img{
   max-width:80%;
   height:auto;
   transition: opacity 0.5s;
 }
 
-img:hover, img:focus{
+.click-img:hover, .click-img:focus{
   opacity: 0.6;
   box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
 }
+/* image-Link{
+  max-width:80%;
+  height:auto;
+  transition: opacity 0.5s;
+}
+
+.image-Link:hover, image-Link:focus{
+  opacity: 0.6;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
+} */
 /* .radiob{
   display: block;
   position: relative;
@@ -316,10 +326,10 @@ img{
   height:auto;
 }
 
-img:hover, img:focus{
+/* img:hover, img:focus{
   opacity: 0.8;
   transition-duration: 0.7s;
-}
+} */
 
 .intext-link {
   text-decoration:none;
