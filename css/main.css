@@ -172,7 +172,7 @@ img:hover, img:focus{
 }
 
 
-.radiob ul{
+/* .radiob ul{
   margin: 0;
   padding: 0;
 	
@@ -252,7 +252,7 @@ input[type=radio]:checked ~ .check::before{
 
 input[type=radio]:checked ~ label{
   color: rgb(245,184,16);
-}
+} */
 
 
 
@@ -330,7 +330,6 @@ figure{
 .box{
   display:flex;
   flex-wrap:wrap;
-  
 }
 
 .box-menu{
@@ -587,4 +586,28 @@ option{
   float:right;
   margin:2rem;
 
+}
+/*Style for product-detail*/
+ul {
+  color:rgb(110,110,110);
+}
+
+.description {
+  font-weight: normal;
+  color:rgb(110,110,110);
+}
+
+.product-img {
+  max-width: 100%;
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .left, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
