@@ -1,3 +1,7 @@
+/* *{
+  border:green solid 0.1rem;
+} */
+
 /*
   STYLE GUIDE STYLING 
 */
@@ -689,4 +693,18 @@ textarea:focus {
 
 input[type=reset] {
   border:0.1rem rgb(243, 198, 75) solid;
+}
+
+/* Style for about page*/
+
+.about-img{
+  max-width: 70%;
+  height:auto;
+}
+
+.about-image {
+  flex-grow: 2;
+  flex-basis: 400px;
+  max-width:50%;
+  float:right;
 }
