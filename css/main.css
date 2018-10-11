@@ -831,3 +831,31 @@ ul {
   max-width:50%;
   float:right;
 }
+
+.about-text{
+  flex-grow: 2;
+  flex-basis: 18rem;
+  margin-left:8rem;
+}
+
+@media screen and (max-width:780px) {
+  .about-text{
+    flex-grow: 2;
+    flex-basis: 18rem;
+    margin:auto;
+    margin-top:0;
+  }
+
+  .about-img{
+    max-width: 90%;
+    height:auto;
+  }
+
+  .about-image {
+    flex-grow: 2;
+    flex-basis: 400px;
+    max-width:100%;
+    padding-top:3rem;
+    margin:auto;
+  }
+}
