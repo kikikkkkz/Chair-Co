@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Prodect Detail</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+            <div class="menu" >
+                    <a class="button-nav" href="home.html">Home</a>
+                    <a class="button-nav" href="about.html">About</a>
+                    <a class="button-nav" href="products.html">Products</a>
+                    <a class="button-nav" href="shopping-cart.html">Shopping Cart</a>
+                    <a class="button-nav" href="contact.html">Contact</a>
+            </div>
+            </div>
+        </header>
+
+        <div class="block">     
+                <a class="image-Link" href="#"><img src ="img/swoop.jpg" alt = "white chair"></a>
+                <div class="text">
+                    <figcaption>
+                        <h5>Granville Wingback Chair </h5>
+                        <h5>$299.99</h5>
+                    </figcaption>
+                <a class="remove" href="#">Remove</a>
+                </div>   
+            </div>
+    
+            <div class="block">
+                <a class="image-Link" href="#"><img src ="img/cordes.jpg" alt = "white chair"></a>
+                <div class="text">
+                    <figcaption>
+                        <h5>Alessandro Desk Chair</h5>
+                        <h5>$142.99</h5>
+                    </figcaption>
+                <a class="remove" href="#">Remove</a>
+                </div>
+            </div>
+    
+            <div class="block">
+                <a class="image-Link" href="#"><img src ="img/coral.jpg" alt = "Coral Springs Armchair"></a>
+                <div class="text">
+                    <figcaption>
+                        <h5>Coral Springs Armchair</h5>
+                        <h5> $425.99 </h5>
+                    </figcaption>
+                <a class="remove" href="#">Remove</a>
+                </div>
+            </div>
+
+            <div class="form-element">
+   
+                
+                    <label class="container">Credit Card
+                    <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Alipay
+                    <input type="radio" name="radio" value="alipay" onclick="show2();">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container">WechatPay
+                    <input type="radio" name="radio" value="wechatpay" onclick="show3();">
+                    <span class="checkmark"></span>
+                    </label>
+                  
+                </div>
+      
+              <div id="div1" class="show">
+                <div class="form">  
+                  <div class="methods form-element">
+                      <label for="form-holder">Cardholder Name:</label>
+                      <input type="text" id="form-holder" placeholder="John Smith"> 
+                  </div> 
+      
+                  <div class="methods form-element">
+                      <label for="form-card">Card Number:</label>
+                      <input type="text" id="form-card" placeholder="1452-3627-1123-1234"> 
+                  </div>
+                  
+                  <div class="methods form-element">
+                      <label for="form-exp">Expiry Date:</label>
+                      <input type="text" id="form-exp" placeholder="Jan">/
+                      <input type="text" id="form-expd" placeholder="2020">
+                  </div>
+      
+                  <div class="methods form-element">
+                      <label for="form-sec">CVV:</label>
+                      <input type="text" id="form-sec" placeholder="123"> 
+                  </div>
+        
+                  <a href="#" class="checkout-button submit-button">Proceed to checkout</a>
+                    
+                </div>
+              </div>
+              
+              <div id="div2" class="hide">
+                Scan QR Code to pay<br>
+                <img src="img/code1.png" alt="Alipay"><br>
+                Complete payment on phone
+              </div>
+      
+              <div id="div3" class="hide">
+                  Scan QR Code to pay<br>
+                  <img src="img/code2.png" alt="WeChat Pay"><br>
+                  Complete payment on phone
+              </div>
+    </body>
+
+    <footer>
+        <nav>
+            <a class="back-button" href="index.html">Style Guide</a>
+        </nav>
+    </footer>
+</html>
+
+<script>
+    
+        function show1(){
+            document.getElementById('div1').style.display ='block';
+            document.getElementById('div2').style.display ='none';
+            document.getElementById('div3').style.display ='none';
+        }
+        function show2(){
+            document.getElementById('div1').style.display ='none';
+            document.getElementById('div2').style.display = 'block';
+            document.getElementById('div3').style.display ='none';
+        }
+        function show3(){
+            document.getElementById('div1').style.display ='none';
+            document.getElementById('div2').style.display = 'none';
+            document.getElementById('div3').style.display ='block';
+        }
+        
+      </script>
