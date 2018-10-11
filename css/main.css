@@ -178,7 +178,7 @@ img:hover, img:focus{
   opacity: 0.6;
   box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
 }
-.radiob{
+/* .radiob{
   display: block;
   position: relative;
   margin-bottom:14rem;
@@ -187,7 +187,7 @@ img:hover, img:focus{
 }
 
 
-.radiob ul{
+/* .radiob ul{
   margin: 0;
   padding: 0;
 	
@@ -267,7 +267,7 @@ input[type=radio]:checked ~ .check::before{
 
 input[type=radio]:checked ~ label{
   color: rgb(245,184,16);
-}
+} */
 
 
 
@@ -345,7 +345,6 @@ figure{
 .box{
   display:flex;
   flex-wrap:wrap;
-  
 }
 
 .box-menu{
@@ -418,7 +417,7 @@ label{
 }
 
 /*Style input fields*/
-input[type=text]{
+input[type=text], input[type=email]{
   border: 0.1rem solid rgb(90,90,90);
   padding:0.4rem 0.5rem;
   width: 10rem;
@@ -426,11 +425,11 @@ input[type=text]{
   transition: border 0.4s;
 }
 
-input[type=text]:hover{
+input[type=text]:hover, input[type=email]:hover{
   box-shadow: 0 0 0.3rem rgb(110,110,110);
 }
 
-input[type=text]:focus{
+input[type=text]:focus, input[type=email]:focus{
   border: 0.1rem solid rgb(245,184,16);
 }
 
@@ -607,4 +606,87 @@ option{
   float:right;
   margin:2rem;
 
+}
+
+/*Style for product-detail*/
+.product-img {
+  max-width: 100%;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.5em;
+}
+
+ul {
+  color: rgb(110,110,110);
+}
+
+.product-description {
+  font-weight: normal;
+}
+
+.box-image {
+  flex-grow: 3;
+  flex-basis: 400px;
+}
+
+.box-text {
+  flex-grow: 1;
+  flex-basis: 18rem;
+}
+
+@media (min-width: 46.0625em) {
+
+}
+.product-price {
+  font-size: 1.5rem;
+}
+
+.btn-cart{
+  font-size:0.8rem;
+  padding: 0.5rem 0.7rem;
+  color:rgb(80,80,80);
+  border:0.1rem rgb(245,184,16) solid;
+  border-radius:1.5rem;
+  text-decoration: none;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+.btn-cart:hover, .btn-cart:focus {
+  color:white;
+  background-color:rgb(245,184,16);
+  transition-property: color;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/*Style for contact*/
+.bottom {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem;
+  color: rgb(245,184,16);
+}
+
+textarea {
+  width: 11rem;
+  padding:0.4rem 0.5rem;
+  margin-right: 1rem;
+  box-sizing: border-box;
+  border: 0.1rem solid rgb(90,90,90);
+  outline: none;
+}
+
+textarea:hover {
+  box-shadow: 0 0 0.3rem rgb(110,110,110);
+}
+
+textarea:focus {
+  border: 0.1rem solid rgb(245,184,16);
+}
+
+input[type=reset] {
+  border:0.1rem rgb(243, 198, 75) solid;
 }
