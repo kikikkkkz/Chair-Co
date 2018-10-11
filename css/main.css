@@ -320,11 +320,6 @@ padding:0.25rem;
   transition-duration: 0.5s;
 }
 
-img{
-  margin:auto;
-  max-width:100%;
-  height:auto;
-}
 
 /* img:hover, img:focus{
   opacity: 0.8;
@@ -614,6 +609,7 @@ option{
 .content {
   padding-top: 5rem;
   padding-bottom: 1rem;
+  margin: 0 2rem;
 }
 
 .back-button{
@@ -624,29 +620,39 @@ option{
 
 /*Style for product-detail*/
 .product-img {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
 }
 
 .product-name {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 ul {
   color: rgb(110,110,110);
 }
 
+.title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  display: block;
+}
+
 .product-description {
   font-weight: normal;
+  font-size: 1rem;
+  max-width: 80%;
+  display: block;
+  padding-left: 2rem;
 }
 
 .box-image {
-  flex-grow: 3;
+  flex-grow: 1;
   flex-basis: 400px;
 }
 
 .box-text {
-  flex-grow: 1;
+  flex-grow: 2;
   flex-basis: 18rem;
 }
 
@@ -676,33 +682,104 @@ ul {
   transition-duration: 0.5s;
 }
 
-/*Style for contact*/
-.bottom {
-  text-align: center;
-  vertical-align: middle;
-  padding: 1rem;
-  color: rgb(245,184,16);
+.customer-review {
+  display: block;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
 }
 
-textarea {
-  width: 11rem;
-  padding:0.4rem 0.5rem;
+.review-left {
+  display: inline-block;
+  padding-right: 1rem; 
   margin-right: 1rem;
+  border-right: solid rgb(245,184,16) 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.customer {
+  font-weight: bold;
+  color: rgb(70,70,70);
+}
+
+.date {
+  color: rgb(110,110,110);
+  font-size: 0.9rem;
+  padding-top: 0.1rem;
+}
+
+.comment {
+  color: rgb(70,70,70);
+  display: inline-block;
+  vertical-align: top;
+  max-width: 85%;
+}
+
+#write-comment {
+  margin: 0 1rem;
+}
+
+#write-comment input[type=text]{
+  flex-grow: 1;
+  flex-basis: 80%;
+  width: 80%;
+}
+
+#write-comment input[type=submit]{
+  float: right;
+  margin: 0 6%;
+  margin-top: 1rem;
+}
+
+/*Style for contact*/
+#contact input[type=reset] {
+  border:0.1rem rgb(243, 198, 75) solid;
+}
+
+#contact {
+  flex-grow: 2;
+}
+
+#contact input[type=text], #contact input[type=email]{
+  width: 60%;
+}
+
+#contact textarea {
+  width: 60%;
+  padding:0.4rem 0.5rem;
+  margin-right: 0;
   box-sizing: border-box;
   border: 0.1rem solid rgb(90,90,90);
   outline: none;
 }
 
-textarea:hover {
+#contact textarea:hover {
   box-shadow: 0 0 0.3rem rgb(110,110,110);
 }
 
-textarea:focus {
+#contact textarea:focus {
   border: 0.1rem solid rgb(245,184,16);
 }
 
-input[type=reset] {
-  border:0.1rem rgb(243, 198, 75) solid;
+.bottom {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem;
+  display: inline-block;
+  flex: 1;
+}
+
+.bottom a {
+  color: rgb(110,110,110);
+}
+
+.bottom a:hover, .bottom a:focus {
+  color: rgb(245,184,16);
+}
+
+/*Style for purchase*/
+.message {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 /* Style for about page*/
