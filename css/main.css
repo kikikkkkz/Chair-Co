@@ -85,13 +85,14 @@ section {
 .button-nav {
   font-size:1.2rem;
   display: inline-block;
+  margin-top:0.5rem;
   padding: 0.5rem;
   margin-right:1.5rem;
   color:rgb(80,80,80);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  border-top:0.3rem white solid;
+  border-top:0.2rem white solid;
   overflow:hidden;
 }
 
@@ -103,7 +104,7 @@ section {
 }
 
 .button-nav:hover, .button-nav:focus {
-  border-top:0.3rem rgb(245,184,16) solid; 
+  border-top:0.2rem rgb(245,184,16) solid; 
 }
 
 .intext-link{
@@ -580,4 +581,10 @@ option{
 .content {
   padding-top: 5rem;
   padding-bottom: 1rem;
+}
+
+.back-button{
+  float:right;
+  margin:2rem;
+
 }
