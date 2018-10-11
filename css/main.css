@@ -397,7 +397,7 @@ label{
 }
 
 /*Style input fields*/
-input[type=text]{
+input[type=text], input[type=email]{
   border: 0.1rem solid rgb(90,90,90);
   padding:0.4rem 0.5rem;
   width: 10rem;
@@ -405,11 +405,11 @@ input[type=text]{
   transition: border 0.4s;
 }
 
-input[type=text]:hover{
+input[type=text]:hover, input[type=email]:hover{
   box-shadow: 0 0 0.3rem rgb(110,110,110);
 }
 
-input[type=text]:focus{
+input[type=text]:focus, input[type=email]:focus{
   border: 0.1rem solid rgb(245,184,16);
 }
 
@@ -640,4 +640,33 @@ ul {
   transition-property: color;
   transition-property: background-color;
   transition-duration: 0.5s;
+}
+
+/*Style for contact*/
+.bottom {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem;
+  color: rgb(245,184,16);
+}
+
+textarea {
+  width: 11rem;
+  padding:0.4rem 0.5rem;
+  margin-right: 1rem;
+  box-sizing: border-box;
+  border: 0.1rem solid rgb(90,90,90);
+  outline: none;
+}
+
+textarea:hover {
+  box-shadow: 0 0 0.3rem rgb(110,110,110);
+}
+
+textarea:focus {
+  border: 0.1rem solid rgb(245,184,16);
+}
+
+input[type=reset] {
+  border:0.1rem rgb(243, 198, 75) solid;
 }
