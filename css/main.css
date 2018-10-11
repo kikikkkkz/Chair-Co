@@ -1,3 +1,7 @@
+/* *{
+  border:green solid 0.1rem;
+} */
+
 /*
   STYLE GUIDE STYLING 
 */
@@ -92,7 +96,7 @@ section {
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  border-top:0.2rem white solid;
+  border-top:0.2rem transparent solid;
   overflow:hidden;
 }
 
@@ -106,6 +110,21 @@ section {
 .button-nav:hover, .button-nav:focus {
   border-top:0.2rem rgb(245,184,16) solid; 
 }
+
+@media screen and (max-width: 52.75em) {
+  .button-nav{
+      margin-right:0.3rem;
+    
+  }
+
+  nav a{
+      font-size:0.6rem;
+  }
+
+  figure{
+      margin:auto;
+  }
+  }
 
 .intext-link{
   text-decoration:none;
@@ -153,16 +172,26 @@ section {
   transition-duration: 0.7s;
 }
 
-img{
+.click-img{
   max-width:80%;
   height:auto;
   transition: opacity 0.5s;
 }
 
-img:hover, img:focus{
+.click-img:hover, .click-img:focus{
   opacity: 0.6;
   box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
 }
+/* image-Link{
+  max-width:80%;
+  height:auto;
+  transition: opacity 0.5s;
+}
+
+.image-Link:hover, image-Link:focus{
+  opacity: 0.6;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
+} */
 /* .radiob{
   display: block;
   position: relative;
@@ -292,6 +321,11 @@ padding:0.25rem;
 }
 
 
+/* img:hover, img:focus{
+  opacity: 0.8;
+  transition-duration: 0.7s;
+} */
+
 .intext-link {
   text-decoration:none;
   color:rgb(110,110,110);
@@ -326,6 +360,11 @@ figure{
   display:flex;
   flex-wrap:wrap;
   float:right;
+}
+
+.look{
+  margin-top:5rem;
+  margin-left:3rem;
 }
 
 /* input:hover, input:focus{
@@ -741,4 +780,18 @@ ul {
 .message {
   margin-top: 3rem;
   text-align: center;
+}
+
+/* Style for about page*/
+
+.about-img{
+  max-width: 70%;
+  height:auto;
+}
+
+.about-image {
+  flex-grow: 2;
+  flex-basis: 400px;
+  max-width:50%;
+  float:right;
 }
