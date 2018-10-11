@@ -620,7 +620,7 @@ option{
 
 /*Style for product-detail*/
 .product-img {
-  width: 160%;
+  width: 100%;
   text-align: center;
 }
 
@@ -720,17 +720,17 @@ ul {
 
 #write-comment input[type=text]{
   flex-grow: 1;
+  flex-basis: 80%;
+  width: 80%;
 }
 
 #write-comment input[type=submit]{
   float: right;
-  margin: 0 8%;
+  margin: 0 6%;
   margin-top: 1rem;
 }
 
 /*Style for contact*/
-
-
 #contact input[type=reset] {
   border:0.1rem rgb(243, 198, 75) solid;
 }
