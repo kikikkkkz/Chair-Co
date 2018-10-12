@@ -127,7 +127,8 @@ position:absolute;
 
   }
 
-
-
+  .menunav .logo{
+    visibility: visible;
+  }
 
 }
