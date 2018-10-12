@@ -39,7 +39,14 @@ nav{
   border-top:0.2rem rgb(245,184,16) solid; 
 }
 
+.logo{
+margin-top:0;
+top:1px;
+left:3rem;
+position:absolute;
 
+
+}
 
 @media screen and (max-width:900px) {
 
