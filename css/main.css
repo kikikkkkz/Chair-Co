@@ -53,6 +53,8 @@ p {
   color:rgb(70,70,70);
   margin-top: 0;
   max-width:40rem;
+  font-family:Cormorant-Light;
+  font-weight:0.1;
   padding:0.25rem;
   line-height: 1.3rem;
 }
