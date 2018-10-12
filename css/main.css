@@ -653,7 +653,7 @@ ul {
 
 .box-image {
   flex-grow: 1;
-  flex-basis: 400px;
+  flex-basis: 25rem;
 }
 
 .box-text {
@@ -661,8 +661,14 @@ ul {
   flex-basis: 18rem;
 }
 
-@media (min-width: 46.0625em) {
+@media (min-width: 47.8em) {
+  .box-image {
+    order: 1;
+  }
 
+  .box-text {
+    order: 2;
+  }
 }
 .product-price {
   font-size: 1.5rem;
@@ -699,6 +705,7 @@ ul {
   margin-right: 1rem;
   border-right: solid rgb(245,184,16) 0.2rem;
   margin-bottom: 1rem;
+  width: 9rem;
 }
 
 .customer {
