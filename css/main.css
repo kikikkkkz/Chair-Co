@@ -345,15 +345,12 @@ padding:0.25rem;
   padding-bottom:1rem;
 }
 
-figure{  
-  padding-top:2rem;
-  padding-bottom:4rem;
-  max-width:18rem;
-}
+
 
 .box{
   display:flex;
   flex-wrap:wrap;
+  margin-top:3rem;
 }
 
 .box-menu{
@@ -546,9 +543,9 @@ option{
 .remove{
   text-decoration:none;
   color:rgba(245,184,16,0.7);
-  margin-top:1.5rem;
+ 
   margin-right:0.7rem;
-  float:left;
+ 
   margin-bottom:2rem;
 }
 
@@ -975,3 +972,65 @@ float:center;
   padding-top:3rem;
   margin:auto;
 }
+
+/* shopping cart styling */
+.container-block{
+  flex-flow: wrap;
+  display:flex;
+  margin-top:3rem;
+}
+
+.block{
+  padding:0.5rem;
+  border:0.05rem  solid ;
+  border-color:rgb(245,184,16) white;
+  width:90%;
+  margin-top:5rem;
+  margin:auto;
+  margin-bottom:2rem;
+
+  }
+
+  figure{  
+    padding-top:2rem;
+    padding-bottom:4rem;
+    max-width:18rem;
+  }
+
+  .remove{
+    text-decoration:none;
+    color:rgba(245,184,16,0.7);
+   
+    float:left;
+    margin-bottom:2rem;
+  }
+  
+  .remove:hover, .remove:focus{
+    color:rgb(245,184,16);
+    transition-property: color; 
+    transition-duration: 0.5s;
+  }
+
+  .more-l{
+  float:left;
+  }
+
+  .more-r{
+   float:right;
+  }
+
+  .block figure{
+    
+    max-width:30rem;
+  }
+
+  .pay-method{
+    margin-left:10rem;
+    margin-top:1rem;
+  }
+
+  @media screen and (max-width:780px) {
+  .pay-method{
+    margin:auto;
+  }
+    }

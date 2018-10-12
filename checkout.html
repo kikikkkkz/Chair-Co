@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Prodect Detail</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/nav.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+
+            <nav class="topnav">
+                    <input type="checkbox" id="checkboxnav" />
+                    <label for="checkboxnav">
+                      <span class="toggle">☰</span>
+                      <ul class="menunav">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="shopping-cart.html">Cart</a></li>
+                        <li><a  href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </label>
+          
+                  </nav>
+        
+        </header>
+        <!-- <script src="js/menu.js"></script> -->
+
+ 
+        <div class="block"> 
+            <div class="box"> 
+                <figure><img src ="img/swoop.jpg" alt = "white chair"></figure> 
+                    <figure><h5>Granville Wingback Chair </h5>
+                        <h5>Total</h5>
+                       <h5>$299.99</h5></figure> 
+                  
+          
+  <div class="pay-method"> 
+  <figure>
+            <div class="form-element">
+                    <label class="container label">Credit Card
+                    <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container label">Alipay
+                    <input type="radio" name="radio" value="alipay" onclick="show2();">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="container label">WechatPay
+                    <input type="radio" name="radio" value="wechatpay" onclick="show3();">
+                    <span class="checkmark"></span>
+                    </label>
+                  
+                </div>
+      
+             
+              <div id="div1" class="show">
+                <div class="form">  
+                  <div class="methods form-element">
+                      <label for="form-holder" class="label">Cardholder Name:</label>
+                      <input type="text" id="form-holder" placeholder="John Smith"> 
+                  </div> 
+      
+                  <div class="methods form-element">
+                      <label for="form-card" class="label">Card Number:</label>
+                      <input type="text" id="form-card" placeholder="1452-3627-1123-1234"> 
+                  </div>
+                  
+                  <div class="methods form-element">
+                      <label for="form-exp" class="label">Expiry Date:</label>
+                      <input type="text" id="form-exp" placeholder="Jan">/
+                      <input type="text" id="form-expd" placeholder="2020">
+                  </div>
+      
+                  <div class="methods form-element">
+                      <label for="form-sec" class="label">CVV:</label>
+                      <input type="text" id="form-sec" placeholder="123"> 
+                  </div>
+        
+                  <a href="confirmation.html" class="checkout-button submit-button">Confirm Payment</a>
+                    
+                </div>
+              </div>
+              
+              <div id="div2" class="hide">
+                <a href="confirmation.html">
+                Scan QR Code to pay<br>
+                <img src="img/code1.png" alt="Alipay"><br>
+                Complete payment on phone
+                </a>
+              </div>
+      
+              <div id="div3" class="hide">
+                <a href="confirmation.html">
+                Scan QR Code to pay<br>
+                <img src="img/code2.png" alt="WeChat Pay"><br>
+                Complete payment on phone
+                </a>
+              </div>
+            </figure>
+        </div>   
+
+            </div>
+        </div> 
+    </body>
+
+    <footer>
+        <nav>
+            <a class="back-button" href="index.html">Style Guide</a>
+        </nav>
+    </footer>
+</html>
+
+<script>
+    
+        function show1(){
+            document.getElementById('div1').style.display ='block';
+            document.getElementById('div2').style.display ='none';
+            document.getElementById('div3').style.display ='none';
+        }
+        function show2(){
+            document.getElementById('div1').style.display ='none';
+            document.getElementById('div2').style.display = 'block';
+            document.getElementById('div3').style.display ='none';
+        }
+        function show3(){
+            document.getElementById('div1').style.display ='none';
+            document.getElementById('div2').style.display = 'none';
+            document.getElementById('div3').style.display ='block';
+        }
+        
+      </script>
+
+        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              
+                ga('create', 'UA-46156385-1', 'cssscript.com');
+                ga('send', 'pageview');
+        </script>
+
+      
