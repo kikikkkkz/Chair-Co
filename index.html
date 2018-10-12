@@ -485,64 +485,38 @@
         <p>.checkout-Cart</p>
 
         <h4>Sample code</h4>
-        <code>&lt;div class="block"&gt</code>
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/brook.jpg alt = "Coral Springs Armchair"&gt;&lt;/a&gt;</code>
-        <code>&lt;figcaption&gt;Coral Springs Armchair&lt;/figcaption&gt;</code>
-        <code>&lt;figcaption&gt;$219.99&lt;/figcaption&gt;</code>
-        <code>&lt;a  class="remove" href="#"&gt;Remove&lt;/a&gt;</code><br>
-
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/brook.jpg alt = "Granville Swoop Wingback Chair"&gt;&lt;/a&gt;</code>
-        <code>&lt;figcaption&gt;Granville Swoop Wingback Chair&lt;/figcaption&gt;</code>
-        <code>&lt;figcaption&gt;$299.99&lt;/figcaption&gt;</code>
-        <code>&lt;a  class="remove" href="#"&gt;Remove&lt;/a&gt;</code><br>
-
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/brook.jpg alt = "Alessandro Desk Chair"&gt;&lt;/a&gt;</code>
-        <code>&lt;figcaption&gt;Alessandro Desk Chair&lt;/figcaption&gt;</code>
-        <code>&lt;figcaption&gt;$142.99&lt;/figcaption&gt;</code>
-        <code>&lt;a  class="remove" href="#"&gt;Remove&lt;/a&gt;</code><br>
-
-        <code>&lt;p&gt;Subtotal: $662.97&lt;/p&gt;</code>
-        <code>&lt;p&gt;Tax: $79.65&lt;/p&gt;</code>
-        <code>&lt;h4&gt;&lt;strong&gt;Total:742.62&lt;/strong&gt;&lt;/h4&gt;</code>
-        <code>&lt;a  class="submit-button" href="#"&gt;Proceed to checkout&lt;/a&gt;</code><br>
+       
+       <code>&lt;div class="block"&gt; </code> 
+       <code>&lt;div class="box"&gt; </code>
+        <code>&lt;figure&gt;&lt;img src ="img/swoop.jpg" alt = "white chair"&gt;</figure></code> 
+        <code>&lt;figure&gt;&lt;h5&gt;Granville Wingback Chair &lt;/h5&gt;&lt;/figure&gt;</code>
+        <code>&lt;figure&gt;&lt;h5&gt;Quantity&lt;/h5&gt;</code>
+        <code>&lt;div class="methods form-element"&gt;&lt;/div&gt;</code>
+        <code>&lt;input type="text" placeholder="1"&gt;</code>
+        <code>&lt;/div&gt;</code> 
+        <code>&lt;a class="remove" href="#"&gt;Remove&lt;/a&gt;&lt;/figure&gt;</code>
+        <code>&lt;figure&gt;&lt;h5&gt;Total&lt;/h5&gt;</code>
+        <code>&lt;p&gt;$299.99&lt;/p&gt;&lt;/figure&gt; </code>
+        <code>/div&gt;</code>
         <code>&lt;/div&gt;</code>
 
 
         <h4>Rendered element:</h4>
     
-        <div class="block">     
-            <a class="image-Link" href="#"><img src ="img/swoop.jpg" alt = "white chair"></a>
-            <div class="text">
-                <figcaption>
-                    <h5>Granville Wingback Chair </h5>
-                    <h5>$299.99</h5>
-                </figcaption>
-            <a class="remove" href="#">Remove</a>
-            </div>   
-        </div>
-
-        <div class="block">
-            <a class="image-Link" href="#"><img src ="img/cordes.jpg" alt = "white chair"></a>
-            <div class="text">
-                <figcaption>
-                    <h5>Alessandro Desk Chair</h5>
-                    <h5>$142.99</h5>
-                </figcaption>
-            <a class="remove" href="#">Remove</a>
+        <div class="block"> 
+            <div class="box"> 
+                <figure><img src ="img/swoop.jpg" alt = "white chair"></figure> 
+                    <figure><h5>Granville Wingback Chair </h5></figure>
+                    <figure><h5>Quantity</h5>
+                        <div class="methods form-element">
+                         <input type="text" placeholder="1"> 
+                        </div> 
+                        <a class="remove" href="#">Remove</a></figure>
+                   <figure><h5>Total</h5>
+                       <p>$299.99</p></figure> 
             </div>
-        </div>
-
-        <div class="block">
-            <a class="image-Link" href="#"><img src ="img/coral.jpg" alt = "Coral Springs Armchair"></a>
-            <div class="text">
-                <figcaption>
-                    <h5>Coral Springs Armchair</h5>
-                    <h5> $425.99 </h5>
-                </figcaption>
-            <a class="remove" href="#">Remove</a>
-            </div>
-        </div>
-      </section>
+        </div> 
+      
 
     </section>
 
