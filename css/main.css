@@ -611,7 +611,7 @@ option{
 }
 
 .content {
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   margin: 0 2rem;
 }
@@ -705,9 +705,8 @@ ul {
   display: inline-block;
   padding-right: 1rem; 
   margin-right: 1rem;
-  border-right: solid rgb(245,184,16) 0.2rem;
   margin-bottom: 1rem;
-  width: 9rem;
+  width: 9.5rem;
 }
 
 .customer {
@@ -725,7 +724,22 @@ ul {
   color: rgb(70,70,70);
   display: inline-block;
   vertical-align: top;
-  max-width: 85%;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 60.9em) {
+  .review-left {
+    border-right: solid rgb(245,184,16) 0.2rem;
+  }
+
+}
+
+@media screen and (max-width: 60.9em) {
+  .review-left {
+    border-bottom: solid rgb(245,184,16) 0.2rem;
+    padding-bottom: 0.5rem;
+  }
+
 }
 
 #write-comment {
@@ -793,7 +807,7 @@ ul {
 /*Style for confirmation*/
 .message {
   display: block;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   text-align: center;
 }
 
