@@ -760,9 +760,13 @@ ul {
 
 /*Style for contact*/
 #contact input[type=reset] {
-  border:0.1rem rgb(243, 198, 75) solid;
+  border: 0.1rem rgb(243, 198, 75) solid;
+  float: right;
 }
 
+#contact input[type=submit] {
+  float: right;
+}
 #contact {
   flex-grow: 2;
 }
@@ -792,8 +796,6 @@ ul {
   text-align: center;
   vertical-align: middle;
   padding: 1rem;
-  display: inline-block;
-  flex: 1;
 }
 
 .bottom a {
@@ -802,6 +804,17 @@ ul {
 
 .bottom a:hover, .bottom a:focus {
   color: rgb(245,184,16);
+}
+
+@media screen and (max-width:490px) {
+  #contact input[type=text], #contact input[type=email], #contact textarea{
+    width: 100%;
+  }
+
+  #contact input[type=reset], #contact input[type=submit] {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 }
 
 /*Style for confirmation*/
