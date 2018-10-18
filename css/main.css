@@ -180,6 +180,17 @@ section {
   transition: opacity 0.5s;
 }
 
+.static{
+  max-width:50%;
+  height:auto;
+}
+
+.static1{
+  max-width:70%;
+  height:auto;
+}
+
+
 .click-img:hover, .click-img:focus{
   opacity: 0.6;
   box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
@@ -624,7 +635,7 @@ option{
 
 /*Style for product-detail*/
 .product-img {
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
 
@@ -941,6 +952,7 @@ float:center;
   flex-flow: wrap;
   align-self:center;
   justify-content: center;
+ 
 }
 
 /* small elements on home page */
