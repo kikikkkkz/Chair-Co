@@ -27,7 +27,6 @@ nav{
   align-self: center;
   margin: 0 0.4rem;
   letter-spacing: 0.07em;
-  
   font-size:1.0rem;
   color:rgb(110,110,110);
   padding:0.75rem;
@@ -39,7 +38,14 @@ nav{
   border-top:0.2rem rgb(245,184,16) solid; 
 }
 
+.logo{
+margin-top:0;
+top:1px;
+left:3rem;
+position:absolute;
 
+
+}
 
 @media screen and (max-width:900px) {
 
@@ -121,7 +127,8 @@ nav{
 
   }
 
-
-
+  .menunav .logo{
+    visibility: visible;
+  }
 
 }

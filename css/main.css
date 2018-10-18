@@ -25,8 +25,8 @@ h3 {
   font-family: "Hind", sans-serif;
   color:rgb(90,90,90);
   font-size:1.5rem;
-  margin-top: 1rem;
-  padding-top:1.5rem;
+  margin-top: 0.5rem;
+  padding-top:1rem;
 }
 
 h4 {
@@ -53,6 +53,8 @@ p {
   color:rgb(70,70,70);
   margin-top: 0;
   max-width:40rem;
+  font-family:Cormorant-Light;
+  font-weight:0.1;
   padding:0.25rem;
   line-height: 1.3rem;
 }
@@ -609,7 +611,7 @@ option{
 }
 
 .content {
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   margin: 0 2rem;
 }
@@ -703,9 +705,8 @@ ul {
   display: inline-block;
   padding-right: 1rem; 
   margin-right: 1rem;
-  border-right: solid rgb(245,184,16) 0.2rem;
   margin-bottom: 1rem;
-  width: 9rem;
+  width: 9.5rem;
 }
 
 .customer {
@@ -723,7 +724,22 @@ ul {
   color: rgb(70,70,70);
   display: inline-block;
   vertical-align: top;
-  max-width: 85%;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 60.9em) {
+  .review-left {
+    border-right: solid rgb(245,184,16) 0.2rem;
+  }
+
+}
+
+@media screen and (max-width: 60.9em) {
+  .review-left {
+    border-bottom: solid rgb(245,184,16) 0.2rem;
+    padding-bottom: 0.5rem;
+  }
+
 }
 
 #write-comment {
@@ -744,9 +760,13 @@ ul {
 
 /*Style for contact*/
 #contact input[type=reset] {
-  border:0.1rem rgb(243, 198, 75) solid;
+  border: 0.1rem rgb(243, 198, 75) solid;
+  float: right;
 }
 
+#contact input[type=submit] {
+  float: right;
+}
 #contact {
   flex-grow: 2;
 }
@@ -776,8 +796,6 @@ ul {
   text-align: center;
   vertical-align: middle;
   padding: 1rem;
-  display: inline-block;
-  flex: 1;
 }
 
 .bottom a {
@@ -788,10 +806,21 @@ ul {
   color: rgb(245,184,16);
 }
 
+@media screen and (max-width:490px) {
+  #contact input[type=text], #contact input[type=email], #contact textarea{
+    width: 100%;
+  }
+
+  #contact input[type=reset], #contact input[type=submit] {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
 /*Style for confirmation*/
 .message {
   display: block;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   text-align: center;
 }
 
