@@ -169,6 +169,7 @@ section {
   color:rgb(80,80,80);
   background-color:white;
   text-transform:uppercase;
+  cursor: pointer;
 }
 
 .submit-button:hover, .submit-button:focus{
@@ -666,6 +667,7 @@ ul {
   text-decoration: none;
   margin: 2rem 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn-cart:hover, .btn-cart:focus {
@@ -739,17 +741,92 @@ ul {
   margin-top: 1rem;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.5s;
+  animation-name: fadeIn;
+  animation-duration: 0.5s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.6s;
+  animation-name: slideIn;
+  animation-duration: 0.6s
+}
+
+/* The Close Button */
+.close {
+  color: rgb(110,110,110);;
+  float: right;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(245,184,16);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 0.4rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.modal-footer {
+  padding: 1rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {top: -300px; opacity: 0} 
+  to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
 /*Style for contact*/
 #contact input[type=reset] {
   border: 0.1rem rgb(243, 198, 75) solid;
-  float: right;
 }
 
-#contact input[type=submit] {
-  float: right;
-}
 #contact {
   flex-grow: 2;
+  text-align: center;
 }
 
 #contact input[type=text], #contact input[type=email]{
@@ -787,7 +864,11 @@ ul {
   color: rgb(245,184,16);
 }
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:680px) {
+  #contact {
+    text-align: left;
+  }
+
   #contact input[type=text], #contact input[type=email], #contact textarea{
     width: 100%;
   }
