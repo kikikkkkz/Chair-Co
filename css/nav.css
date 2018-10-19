@@ -43,10 +43,14 @@ nav{
 }
 
 .logo{
-  margin-top:0;
- 
+  padding-top:0;
+
   left:3rem;
   position:absolute;
+}
+
+.logo h3{
+  padding-top:0;
 }
 
 @media screen and (max-width:900px) {
