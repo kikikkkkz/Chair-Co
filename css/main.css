@@ -624,8 +624,31 @@ option{
   padding-bottom: 1rem;
   margin: 0 10em;
 
-  /* border-bottom: rgb(221, 220, 220) solid 0.05rem; */
+}
 
+@media (max-width:720px){
+  .content{
+   margin:0 2rem;
+  }
+
+  .box-home figure{
+    max-width:100%;
+  }
+
+  .top-text p{
+    max-width:13rem;
+  }
+
+  .home-text{
+    margin:auto;
+    max-width:15rem;
+  }
+
+  .border-box h5{
+    font-size:0.7rem;
+    vertical-align: top;
+  }
+ 
 }
 
 
@@ -692,7 +715,8 @@ ul {
   border:0.1rem rgb(245,184,16) solid;
   border-radius:1.5rem;
   text-decoration: none;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  float:left;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1077,7 +1101,11 @@ float:center;
   text-align:center;
 }
 
-
+@media (max-width:680px){
+  .more p{
+    max-width:25rem;
+  }
+}
 /* small elements on home page */
 .dot{
   height:3px;
@@ -1226,8 +1254,7 @@ float:center;
 
   .blockc remove{
     text-align:center;
-    justify-content: center;
-    align-self: center;
+    
   }
 
   .blockc p{
@@ -1239,6 +1266,7 @@ float:center;
   }
   .blockd p{
     padding-top:1rem;
+    
   }
 
   .blockc remove{
