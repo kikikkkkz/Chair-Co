@@ -337,12 +337,6 @@ padding:0.25rem;
   transition-duration: 0.5s;
 }
 
-
-/* img:hover, img:focus{
-  opacity: 0.8;
-  transition-duration: 0.7s;
-} */
-
 .intext-link {
   text-decoration:none;
   color:rgb(110,110,110);
@@ -361,8 +355,6 @@ padding:0.25rem;
   padding-top:5rem;
   padding-bottom:1rem;
 }
-
-
 
 .box{
   display:flex;
@@ -387,7 +379,7 @@ padding:0.25rem;
   opacity:0.5;
   transition-duration:0.5s;
   } */
-
+/* 
   .block{
     padding:3rem;
     margin-right:6rem;
@@ -396,7 +388,7 @@ padding:0.25rem;
     width:70%;
     margin-top:3rem;
 
-    }
+    } */
 
 
 /* .rbutton {
@@ -413,28 +405,6 @@ padding:0.25rem;
   flex-wrap:wrap;
 }
 
-.form{
-  margin-top:0.5rem;
-  display:inline-block;
-}
-
-.form-element {
-  margin: 0.8rem 0;
-}
-
-.hide {
-  border: 0.1rem rgb(110,110,110) solid;
-  padding: 0.8rem;
-  text-align: center;
-  margin: 1.2rem 0;
-  display: none;
-}
-
-.hide a {
-  text-decoration: none;
-  color: rgb(70,70,70);
-}
-
 .label{
   color:rgb(90,90,90);
   font-size: 1rem;
@@ -448,7 +418,8 @@ padding:0.25rem;
 input[type=text], input[type=email]{
   border: 0.1rem solid rgb(90,90,90);
   padding:0.4rem 0.5rem;
-  width: 10rem;
+  margin-bottom: 0.2rem; 
+  width: 100%;
   outline: none;
   transition: border 0.4s;
 }
@@ -459,11 +430,6 @@ input[type=text]:hover, input[type=email]:hover{
 
 input[type=text]:focus, input[type=email]:focus{
   border: 0.1rem solid rgb(245,184,16);
-}
-
-#form-exp, #form-expd {
-  width: 4.5rem;
-  margin-right: 0.2rem;
 }
 
 /*Style radio button*/
@@ -525,7 +491,7 @@ input[type=text]:focus, input[type=email]:focus{
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
   top: 0.38rem;
-  left: 0.4rem;
+  left: 0.35rem;
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
@@ -1092,13 +1058,71 @@ float:center;
     max-width:30rem;
   }
 
-  .pay-method{
-    margin-left:10rem;
-    margin-top:1rem;
-  }
+/* Style for checkout */
+.form{
+  margin-top:0.5rem;
+  display:inline-block;
+  width: 100%;
+}
 
-  @media screen and (max-width:780px) {
+.form-element {
+  margin: 0.8rem 0;
+}
+
+.hide {
+  border: 0.1rem rgb(110,110,110) solid;
+  padding: 0.8rem;
+  text-align: center;
+  margin: 1.2rem 0;
+  display: none;
+}
+
+.hide a {
+  text-decoration: none;
+  color: rgb(70,70,70);
+}
+
+/* .pay-method{
+  margin-left:10rem;
+  margin-top:1rem;
+}
+
+@media screen and (max-width:780px) {
   .pay-method{
     margin:auto;
   }
-    }
+} */
+
+.box-shipping {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-right: 4rem;
+  min-width: 400px;
+}
+
+.box-payment {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-right: 4rem;
+}
+
+.col {
+  display: inline-block;
+  width: 32.4%;
+}
+
+@media screen and (max-width:882px) {
+  .box-shipping {
+    padding: auto;
+    
+  }
+
+  .box-payment {
+    padding: auto;
+  }
+}
+
+/* #form-exp, #form-expd {
+  width: 20%;
+  margin-right: 0.2rem;
+} */
