@@ -598,11 +598,7 @@ option{
   margin: 0 2rem;
 }
 
-.back-button{
-  float:right;
-  margin:2rem;
 
-}
 
 /*Style for product-detail*/
 .product-img {
@@ -982,7 +978,7 @@ ul {
 
 /* style for home page */
 .top-img{
-  background:url("https://design-milk.com/images/2015/09/Ego-Chair-Alegre-Design-BV-1.jpg");
+  background:url("http://64.62.135.129/uploads/images/set-1.jpg");
   height:520px;
   background-position:center;
   background-repeat:no-repeat;
@@ -1059,6 +1055,16 @@ float:center;
 /* top image on about */
 .top-img-2{
   background:url("http://thechromologist.com/wp-content/uploads/2017/03/milan.jpg");
+  height:520px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  
+}
+
+.top-img-1{
+  background:url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/56/73/71579ef07059939.jpg");
   height:520px;
   background-position:center;
   background-repeat:no-repeat;
@@ -1171,6 +1177,39 @@ float:center;
 @media screen and (max-width:780px) {
   .pay-method{
     margin:auto;
+  }
+    }
+
+  /* style for footer */
+
+  footer{
+    margin-top:3rem;
+    border:0.1rem, black,solid;
+  }
+  a.back-button{
+    font-size:1.2rem;
+    color:rgb(80,80,80);
+    text-decoration:none;
+    padding:0.75rem;
+    max-width:40rem;
+  
+  }
+  
+  a.back-button:hover, a.back-button:focus {
+    text-decoration:none;
+    Color:rgb(245,184,16);
+    transition-property:color;
+    transition-duration:0.5s;
+  }
+
+  .citation{
+    background-color: rgb(235, 235, 235);
+    height:10rem;
+    padding-top:4rem;
+    display:flex;
+    flex-flow: wrap;
+    align-self:center;
+    justify-content: center;
   }
 } */
 
