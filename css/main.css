@@ -812,7 +812,7 @@ ul {
 
 /* The Close Button */
 .close {
-  color: rgb(110,110,110);;
+  color: rgb(110,110,110);
   float: right;
   font-size: 1.8rem;
   font-weight: bold;
@@ -899,7 +899,7 @@ ul {
   color: rgb(110,110,110);
 }
 
-.bottom a:hover, .bottom a:focus {
+.bottom a:hover {
   color: rgb(245,184,16);
 }
 
@@ -1058,14 +1058,7 @@ ul {
   flex-grow: 2;
   flex-basis: 18rem;
   margin-left:8rem;
-  width:100;
-  border:soild 0.1rem;
-}
-
-/* add another line of product  */
-
-.product-title{
-float:center;
+  width:100%;
 }
 
 .look h2{
@@ -1318,7 +1311,6 @@ float:center;
 
   footer{
     margin-top:3rem;
-    border:0.1rem, black,solid;
   }
 
 .team{
@@ -1372,12 +1364,12 @@ float:center;
 
 @media screen and (max-width:882px) {
   .box-shipping {
-    padding: auto;
+    padding: 1rem;
     
   }
 
   .box-payment {
-    padding: auto;
+    padding: 1rem;
   }
 }
 
