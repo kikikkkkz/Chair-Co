@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 4rem;
+  margin-top: 4rem;/*specify the class of p*/
   font-size:1.5rem;
   color:rgb(90,90,90);
 }
@@ -51,6 +51,16 @@ h6{
 }
 
 p {
+  color:rgb(70,70,70);
+  margin-top: 0;
+  max-width:40rem;/*specify the class of p*/
+  font-size:0.9rem;
+  margin-bottom:0.5rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+li {
   color:rgb(70,70,70);
   margin-top: 0;
   max-width:40rem;
@@ -639,9 +649,11 @@ option{
  
 }
 
-
-
 /*Style for product-detail*/
+.content-box {
+  margin: 1.5rem 8%;
+}
+
 .product-img {
   width: 80%;
   text-align: center;
@@ -656,14 +668,12 @@ ul {
 }
 
 .title {
-  font-size: 1rem;
-  margin-bottom: 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
   display: block;
 }
 
 .product-description {
-  font-weight: normal;
-  font-size: 1rem;
   max-width: 80%;
   display: block;
   padding-left: 2rem;
@@ -689,8 +699,10 @@ ul {
     order: 2;
   }
 }
+
 .product-price {
   font-size: 1.5rem;
+  margin: 0.6rem 0;
 }
 
 .btn-cart{
@@ -700,7 +712,7 @@ ul {
   border:0.1rem rgb(245,184,16) solid;
   border-radius:1.5rem;
   text-decoration: none;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   float:left;
   text-transform: uppercase;
   cursor: pointer;
@@ -718,6 +730,10 @@ ul {
   display: block;
   margin: 0 1rem;
   margin-bottom: 1rem;
+}
+
+.review {
+  margin: 1rem 0;
 }
 
 .review-left {
@@ -773,8 +789,6 @@ ul {
 
 #write-comment input[type=submit]{
   float: right;
-  margin: 0 6%;
-  margin-top: 1rem;
 }
 
 /* The Modal (background) */
@@ -1317,11 +1331,12 @@ ul {
   }
     }
 
-  /* style for footer */
+/* Style for footer */
 
-  footer{
-    margin-top:3rem;
-  }
+footer{
+  display: block;
+  margin-top:3rem;
+}
 
 .team{
   padding-left:2rem;
