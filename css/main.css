@@ -19,7 +19,6 @@ h1 {
 }
 
 h2 {
-  margin-top: 4rem;/*specify the class of p*/
   font-size:1.5rem;
   color:rgb(90,90,90);
 }
@@ -53,7 +52,6 @@ h6{
 p {
   color:rgb(70,70,70);
   margin-top: 0;
-  max-width:40rem;/*specify the class of p*/
   font-size:0.9rem;
   margin-bottom:0.5rem;
   letter-spacing: 0.05rem;
@@ -148,7 +146,10 @@ section {
     float:right;
   }
 
-  
+  .home-product a{
+    font-size:0.8rem;
+    color:rgba(245,184,16,0.8);
+  }
   
   .intext-link:hover, .intext-link:focus{
     color:rgb(245,184,16);
@@ -952,19 +953,18 @@ ul {
 .button-shop {
   display: inline-block;
   font-size:0.8rem;
-  padding: 0.5rem 0.7rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  border-radius:1.8rem;
-  border:0.1rem rgb(245,184,16) solid;
-  background-color:rgb(245,184,16);
-  color:white;
+  
+  border:0.05rem rgb(245,184,16) solid;
+  color:rgb(245,184,16);
   text-transform:uppercase;
 }
 
 .button-shop:hover, .button-shop:focus{
-  background-color:white;
-  border:0.1rem rgb(245,184,16) solid;
-  color:rgb(80,80,80);
+  background-color:rgb(245,184,16);
+  border:0.05rem rgb(245,184,16) solid;
+  color:white;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -1102,6 +1102,10 @@ ul {
   max-width:45rem;
 }
 
+.more h2{
+  margin-top:4rem;
+}
+
 @media (max-width:680px){
   .more p{
     max-width:25rem;
@@ -1134,8 +1138,19 @@ ul {
   margin:auto;
 }
 
-/* top image on about */
+/* top image on product */
 .top-img-2{
+  background:url("https://image.architonic.com/img_pfm2-4/207/5508/colina-medium-news-14981-b.jpg");
+  height:520px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  
+}
+
+/* top image on about */
+.top-img-1{
   background:url("http://thechromologist.com/wp-content/uploads/2017/03/milan.jpg");
   height:520px;
   background-position:center;
@@ -1145,8 +1160,9 @@ ul {
   
 }
 
-.top-img-1{
-  background:url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/56/73/71579ef07059939.jpg");
+/* top image on contact*/
+.top-img-3{
+  background:url("http://www.idc.rs/wp-content/uploads/2015/04/prodotti-135397-relfc02ef3d63984d34ac43d715204bdd15.jpg");
   height:520px;
   background-position:center;
   background-repeat:no-repeat;
@@ -1154,6 +1170,7 @@ ul {
   position:relative;
   
 }
+
 
 .about-text-2{
   flex-grow: 2;
