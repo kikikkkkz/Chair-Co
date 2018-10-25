@@ -7,26 +7,46 @@
         <title>Chair&Co - Product Detail</title>
         <link rel="icon" href="img/chair&co.png">
         <link href="css/main.css" rel="stylesheet">
-        <link href="css/nav.css" rel="stylesheet">
+        <link href="css/dropdown.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
-                <nav class="topnav">
-                        <input type="checkbox" id="checkboxnav" />
-                        <label for="checkboxnav">
-                        <span class="logo"><h3>Chair&Co</h3></span>
-                        <span class="toggle"><span class="ham">☰</span></span>
-                          <ul class="menunav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="products.html" class="active-nav">Products</a></li>
-                            <li><a href="shopping-cart.html">Cart</a></li>
-                            <li><a  href="contact.html">Contact</a></li>
-                          </ul>
-                        </label>
-              
-                </nav>
+
+                    <span class="logo"><h1>Chair&Co</h1></span>
+                
+                    <ul class="menunav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a  href="contact.html" class="active-nav">Contact</a></li>
+                        <li><a href="shopping-cart.html">Cart</a></li>
+                    </ul>
+                
+                    <nav class="box" id="menu">
+                
+                        <div class="box-item-nav">
+                            <a href="index.html" class="button bg">Home</a>
+                        </div>
+                
+                        <div class="box-item-nav">
+                            <a href="about.html" class="button bg">About</a>
+                        </div>
+                
+                        <div class="box-item-nav">
+                            <a href="products.html" class="button bg">Products</a>
+                        </div>
+                
+                        <div class="box-item-nav">
+                            <a href="contact.html" class="button bg active-nav">Contact</a>
+                        </div>
+                                
+                        <div class="box-item-nav">
+                            <a href="shopping-cart.html" class="button bg">Cart</a>
+                        </div>
+                
+                    </nav>
+                
         </header>
 
         <section class="content-box">
@@ -148,15 +168,8 @@
                    <div class ="team"><p> © 2018 Fall IAT-339 P2 Team-6 Designed by Qi & Xiaofan </p></div>
                 </div> 
     </footer>
+
+    <script src="js/dropdown.js"></script>
+
 </body>
 </html>
-
-<script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
-        ga('create', 'UA-46156385-1', 'cssscript.com');
-        ga('send', 'pageview');
-</script>
