@@ -1120,8 +1120,19 @@ ul {
   margin:auto;
 }
 
-/* top image on about */
+/* top image on product */
 .top-img-2{
+  background:url("https://image.architonic.com/img_pfm2-4/207/5508/colina-medium-news-14981-b.jpg");
+  height:520px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  
+}
+
+/* top image on about */
+.top-img-1{
   background:url("http://thechromologist.com/wp-content/uploads/2017/03/milan.jpg");
   height:520px;
   background-position:center;
@@ -1131,8 +1142,9 @@ ul {
   
 }
 
-.top-img-1{
-  background:url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/56/73/71579ef07059939.jpg");
+/* top image on contact*/
+.top-img-3{
+  background:url("http://www.idc.rs/wp-content/uploads/2015/04/prodotti-135397-relfc02ef3d63984d34ac43d715204bdd15.jpg");
   height:520px;
   background-position:center;
   background-repeat:no-repeat;
@@ -1140,6 +1152,7 @@ ul {
   position:relative;
   
 }
+
 
 .about-text-2{
   flex-grow: 2;
