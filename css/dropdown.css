@@ -1,0 +1,176 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+
+.logo{
+	position:absolute;
+	left: 3rem;
+	padding-top: 0;
+}
+
+.logo h1 {
+	font-size: 1.5rem;
+	padding-top: 0;
+}
+
+nav{
+	max-width: 100%;
+	justify-content: flex-end;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*
+	Setting the defaults for our flex container. Revisit Week 3's tutorial for more detail.
+*/
+.box {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+
+/*
+	Starting from a 'mobile-first' approach, setting the flex-basis to 100% means that all the buttons will be the full with of the page until the media-query (at the bottom of the document) kicks in.
+*/
+.box-item-nav {
+	flex-basis: auto;
+}
+
+/*
+	A generic button class to make sure that all buttons follow a similar style and structure.
+*/
+.button {
+	display: none;
+}
+
+/*
+	Specific classes for backgrounds to help distinguish the different buttons.
+*/
+.bg {
+	background-color: #FFF;
+}
+
+/*
+	Here we have added a simple class that will allow us to toggle the visibility of an element on (or off) for the purposes of showing and hiding our menu.
+*/
+.hidden {
+	display: none;
+}
+
+/*
+	A media-query which helps to make the navigation buttons wrap differently once the display width is above 27em.
+*/
+
+@media (min-width: 680px) {
+	.menunav {
+		padding: 0 2rem;
+		margin: 0;
+		height: 55px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		list-style-type: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	  }
+	  
+	  .menunav li a {
+		text-decoration: none;
+		align-self: center;
+		margin: 0 0.4rem;
+		letter-spacing: 0.07em;
+		font-size:1.0rem;
+		color:rgb(110,110,110);
+		padding:0.75rem;
+		max-width:40rem;
+	  }
+	  
+	  .menunav li:hover a {
+		color: rgb(245,184,16);
+		border-top:0.2rem rgb(245,184,16) solid; 
+	  }
+	  
+	  .menunav li a.active-nav {
+		color: rgb(245,184,16);
+		border-top:0.2rem rgb(245,184,16) solid; 
+	  }
+}
+
+@media screen and (max-width:900px) {
+
+	.menunav li a {
+	  margin: 0 0.1rem;
+	  padding: 0.8rem 0.6rem;
+	  font-size: 0.8rem;
+	  letter-spacing: 0.08em;
+	}
+  
+	.menunav {
+	  padding: 0 3rem;
+	}
+}
+
+@media (max-width: 680px) {
+
+	.logo {
+		left: 2rem;
+	}
+
+	.menunav {
+		display: none;
+	}
+	.box-item-nav {
+		-webkit-flex: 1 1 100%;
+		-ms-flex: 1 1 100%;
+		flex: 1 1 100%;
+	}
+
+	#menu-toggle {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.button {
+		cursor: pointer;
+		display: block;
+		clear: both;
+		text-decoration: none;
+		transition: color 0.3s;
+		padding: 0.35rem 2.5rem;
+		padding-top: 0;
+		margin: 0;
+		border: 0;
+		width: 100%;
+		text-align: right;
+		font-size: 1.8rem;
+		line-height: 35px;
+		height: 55px;
+		align-self: center;
+	}
+	
+	.button:hover, .button:focus {
+		color: rgb(245,184,16);
+	}
+
+	.bg {
+		text-align: center;
+		font-size: 0.8rem;
+		letter-spacing: 0.08em;
+		height: auto;
+		padding: 0 0.4rem;
+		margin: 0.8rem 1rem;
+		line-height: 1.4rem;
+		
+	}
+
+	.active-nav {
+		color: rgb(245,184,16);
+		border-top: none;
+		border-left:0.2rem rgb(245,184,16) solid; 
+	}
+}
