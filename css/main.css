@@ -404,7 +404,7 @@ input[type=text]:focus, input[type=email]:focus{
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
-  top: 0.38rem;
+  top: 0.37rem;
   left: 0.38rem;
   width: 0.75rem;
   height: 0.75rem;
@@ -1244,8 +1244,12 @@ figcaption{
   text-align:center;
 }
 
+.shrink {
+    width:90%;
+}
+
 .button-shop-1{
-  width:100%;
+  width:90%;
   text-align:center;
 }
 
@@ -1344,6 +1348,23 @@ figcaption{
   .blockc input[type=text], .blockc input[type=email]{
     width: 45%;
   }
+
+@media (max-width:640px){
+    .border-box figure{
+        margin: 0.6rem 0.7rem;
+    }
+
+    .border-box {
+        margin-bottom: 0.6rem;
+    }
+    .border-box h5 {
+        font-size: 0.9rem;
+    }
+
+    .border-box a, .border-box p {
+        font-size: 0.8rem;
+    }
+}
 
 /* Style for checkout */
 .form{
