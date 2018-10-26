@@ -527,7 +527,7 @@ input[type=text]:focus, input[type=email]:focus{
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
   top: 0.38rem;
-  left: 0.35rem;
+  left: 0.38rem;
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
@@ -658,12 +658,6 @@ option{
   margin: 1.5rem 8%;
 }
 
-.content-box h2 {
-  text-align:center;
-  margin-top:3rem;
-}
-
-
 .product-img {
   width: 80%;
   text-align: center;
@@ -677,14 +671,14 @@ ul {
   color: rgb(110,110,110);
 }
 
-.title {
+/* .title {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   display: block;
-}
+} */
 
 .product-description {
-  max-width: 80%;
+  max-width: 85%;
   display: block;
   padding-left: 2rem;
 }
@@ -700,22 +694,18 @@ ul {
   flex-basis: 18rem;
 }
 
-@media (min-width: 47.8em) {
-  .box-image {
-    order: 1;
-  }
-
-  .box-text {
-    order: 2;
-  }
-}
-
 .product-price {
-  font-size: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0;
+  padding-right: 2rem;
   margin: 0.6rem 0;
 }
 
-.btn-cart{
+.btn-cart {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
   font-size:0.8rem;
   padding: 0.5rem 0.7rem;
   color:rgb(80,80,80);
@@ -723,7 +713,6 @@ ul {
   border-radius:1.5rem;
   text-decoration: none;
   margin: 0.5rem 0;
-  float:left;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -772,21 +761,6 @@ ul {
   max-width: 80%;
 }
 
-@media screen and (min-width: 60.9em) {
-  .review-left {
-    border-right: solid rgb(245,184,16) 0.2rem;
-  }
-
-}
-
-@media screen and (max-width: 60.9em) {
-  .review-left {
-    border-bottom: solid rgb(245,184,16) 0.2rem;
-    padding-bottom: 0.5rem;
-  }
-
-}
-
 #write-comment {
   margin: 0 1rem;
 }
@@ -800,6 +774,44 @@ ul {
 #write-comment input[type=submit]{
   float: right;
 }
+
+@media screen and (max-width: 51.1875em) {
+  .product-img {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 66.5625em) {
+  .review-left {
+    border-right: solid rgb(245,184,16) 0.2rem;
+  }
+
+  .comment {
+    padding-left: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 66.5625em) {
+  .review-left {
+    border-bottom: solid rgb(245,184,16) 0.2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .comment {
+    max-width: 95%;
+  }
+
+  #write-comment input[type=text]{
+    width: 96%;
+  }
+  
+  .product-description {
+    max-width: 95%;
+    padding-left: 1rem;
+  }
+
+  
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -880,6 +892,9 @@ ul {
 }
 
 /*Style for contact*/
+.contact h2{
+  text-align: center;
+}
 
 #contact {
   flex-grow: 2;
@@ -933,6 +948,10 @@ ul {
   #contact input[type=reset], #contact input[type=submit] {
     width: 100%;
     margin-top: 0.5rem;
+  }
+
+  .contact h2{
+    text-align: left;
   }
 }
 

@@ -47,6 +47,7 @@ nav{
 */
 .button {
 	display: none;
+	text-align: center;
 }
 
 /*
@@ -90,15 +91,32 @@ nav{
 		padding:0.75rem;
 		max-width:40rem;
 	  }
+
+	  .menunav li i {
+		margin: auto 0.2rem;
+		letter-spacing: 0.07em;
+		font-size:1.0rem;
+		color:rgb(110,110,110);
+		display: inline-block;
+		vertical-align: middle;
+	  }
 	  
 	  .menunav li:hover a {
 		color: rgb(245,184,16);
 		border-top:0.2rem rgb(245,184,16) solid; 
 	  }
-	  
+
+	  .menunav li:hover i {
+		color: rgb(245,184,16);
+	  }
+
 	  .menunav li a.active-nav {
 		color: rgb(245,184,16);
 		border-top:0.2rem rgb(245,184,16) solid; 
+	  }
+
+	  .menunav li .active-nav i {
+		color: rgb(245,184,16);
 	  }
 }
 
@@ -107,6 +125,12 @@ nav{
 	.menunav li a {
 	  margin: 0 0.1rem;
 	  padding: 0.8rem 0.6rem;
+	  font-size: 0.8rem;
+	  letter-spacing: 0.08em;
+	}
+
+	.menunav li i {
+	  margin: auto 0.1rem;
 	  font-size: 0.8rem;
 	  letter-spacing: 0.08em;
 	}
@@ -125,6 +149,7 @@ nav{
 	.menunav {
 		display: none;
 	}
+
 	.box-item-nav {
 		-webkit-flex: 1 1 100%;
 		-ms-flex: 1 1 100%;
@@ -151,6 +176,13 @@ nav{
 		line-height: 35px;
 		height: 55px;
 		align-self: center;
+	}
+
+	.button i{
+		line-height: inherit;
+		font-size: inherit;
+		vertical-align: middle;
+		margin: 0.2rem;
 	}
 	
 	.button:hover, .button:focus {
