@@ -702,10 +702,9 @@ ul {
   vertical-align: middle;
   float: none;
   font-size:0.8rem;
-  padding: 0.5rem 0.7rem;
-  color:rgb(80,80,80);
-  border:0.1rem rgb(245,184,16) solid;
-  border-radius:1.5rem;
+  padding: 0.5rem 1rem;
+  color:rgb(245,184,16);
+  border:0.05rem rgb(245,184,16) solid;
   text-decoration: none;
   margin: 0.5rem 0;
   text-transform: uppercase;
@@ -767,7 +766,7 @@ ul {
 }
 
 #write-comment input[type=submit]{
-  float: right;
+ margin:auto;
 }
 
 @media screen and (max-width: 51.1875em) {
@@ -955,6 +954,7 @@ ul {
 .message {
   display: block;
   margin-top: 4.5rem;
+  margin-bottom:12rem;
   text-align: center;
 }
 
@@ -1323,6 +1323,7 @@ ul {
     border:solid 0.1rem white;
     display:inline-block;
     max-width:80%;
+    margin-top:0.5rem;
     border-color: white;
   }
 
@@ -1493,10 +1494,10 @@ footer{
   padding-top:0.8rem;
 }
   a.back-button{
-    font-size:1.2rem;
+    font-size:1rem;
     color:rgb(80,80,80);
     text-decoration:none;
-    padding:0.75rem;
+    padding:1rem;
     max-width:40rem;
   
   }
