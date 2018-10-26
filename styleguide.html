@@ -21,15 +21,6 @@
         <a href="index.html">Website</a>
       </nav>
     
-      <!-- <h2>Working links</h2>
-      <nav>
-        <a class="button-nav" href="index.html">Home</a>
-        <a class="button-nav" href="about.html">About</a>
-        <a class="button-nav" href="products.html">Products</a>
-        <a class="button-nav" href="shopping-cart.html">Shopping Cart</a>
-        <a class="button-nav" href="contact.html">Contact</a>
-      </nav> -->
-
     </header>
 <div class="content-style">
     <!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -129,41 +120,18 @@
 
         <h4>Rendered element:</h4>
         <p>Payment options: </p>
-        <!-- <div class="radiob">
-            <ul>
-                <li>
-                  <input type="radio" id="rbutton1" name="select">
-                  <label for="rbutton1">Credit Card</label>
-                  <div class="check"></div>
-                </li>
-                
-                <li>
-                  <input type="radio" id="rbutton2" name="select">
-                  <label for="rbutton2">Paypal</label>
-                  <div class="check"><div class="inside"></div></div>
-                </li>
-                
-                <li>
-                  <input type="radio" id="rbutton3" name="select">
-                  <label for="rbutton3">Giftcard</label>
-                  <div class="check"><div class="inside"></div></div>
-                </li>
-              </ul>
-            
-        </div> -->
-
+  
         <div class="form-element">
-                
-          <label class="container">Radio 1
-          <input type="radio" checked="checked" name="radio-example" value="1" onclick="show1();">
+          <label class="container">Credit Card
+          <input type="radio" checked="checked" name="radio-example" value="credit" onclick="show1();">
           <span class="checkmark"></span>
           </label>
-          <label class="container">Radio 2
-          <input type="radio" name="radio-example" value="2" onclick="show2();">
+          <label class="container">Alipay
+          <input type="radio" name="radio-example" value="alipay" onclick="show2();">
           <span class="checkmark"></span>
           </label>
-          <label class="container">Radio 3
-          <input type="radio" name="radio-example" value="3" onclick="show3();">
+          <label class="container">WechatPay
+          <input type="radio" name="radio-example" value="wechatpay" onclick="show3();">
           <span class="checkmark"></span>
           </label>
               
@@ -179,10 +147,10 @@
         <p>.image-Link</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/chair.jpg alt = "modern chair design"&gt;&lt;/a&gt;</code>
+        <code>&lt;a  class="image-Link" href="product-b.html"&gt;&lt;img class="click-img" src ="img/c66.jpg alt = "Truss ChairS"&gt;&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="image-Link" href="#"><img src ="img/chair.jpg" alt = "modern chair design"></a>
+        <a class="image-Link" href="product-b.html"><img class="click-img" src ="img/c66.jpg" alt = "Truss Chair"></a>
        
       </section>
 
@@ -274,19 +242,74 @@
         <p>.button-nav</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button-nav"&gt;Home&lt;/a&gt;</code>
-        <code>&lt;a href="#" class="button-nav"&gt;About&lt;/a&gt;</code>
-        <code>&lt;a href="#" class="button-nav"&gt;Products&lt;/a&gt;</code>
-        <code>&lt;a href="#" class="button-nav"&gt;Cart&lt;/a&gt;</code>
-        <code>&lt;a href="#" class="button-nav"&gt;Contact&lt;/a&gt;</code>
+            <code>&lt;ul class="menunav"&gt;</code>
+            <code>&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt;</code>
+            <code></ul></code>
+    
+            <code>&lt;nav class="box" id="menu"&gt;</code>
+    
+            <code>&lt;div class="box-item-nav"&gt;</code>
+            <code>&lt;a href="#" class="button bg"&gt;Home&lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
+
+            <code>&lt;div class="box-item-nav"&gt;</code>
+            <code>&lt;a href="#" class="button bg"&gt;About&lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
+            <code>&lt;div class="box-item-nav"&gt;</code>
+            <code>&lt;a href="#" class="button bg"&gt;Products&lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
+
+            <code>&lt;div class="box-item-nav"&gt;</code>
+            <code>&lt;a href="#" class="button bg"&gt;Contact&lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
+
+            <code>&lt;div class="box-item-nav"&gt;</code>
+            <code>&lt;a href="#" class="button bg"&gt;Cart&lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
+    
+         
+    
+            <code>&lt;/nav&gt;</code>
         
 
         <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Home</a>
-        <a class="button-nav" href="#">About</a>
-        <a class="button-nav" href="#">Products</a>
-        <a class="button-nav" href="#">Cart</a>
-        <a class="button-nav" href="#">Contact</a>
+       
+        
+        <ul class="menunav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" >About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a  href="#">Contact</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    
+        <nav class="box" id="menu">
+    
+            <div class="box-item-nav">
+                <a href="#" class="button bg">Home</a>
+            </div>
+    
+            <div class="box-item-nav">
+                <a href="#" class="button bg ">About</a>
+            </div>
+    
+            <div class="box-item-nav">
+                <a href="#" class="button bg">Products</a>
+            </div>
+    
+            <div class="box-item-nav">
+                <a href="#" class="button bg">Contact</a>
+            </div>
+                    
+            <div class="box-item-nav">
+                <a href="#" class="button bg">shopping_cartCart</a>
+            </div>
+    
+        </nav>
       </section>
 
       <section class="element">
@@ -296,71 +319,106 @@
         <p>.product-Listing</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/c1.jpg alt = "Woodleg Dining Side Chair"&gt;&lt;/a&gt;</code>
-        <code>&lt;figcaption&gt;&lt;p&gt;Woodleg Dining Side Chair&lt;/p&gt;&lt;/figcaption&gt;</code>
-        <code>&lt;figcaption&gt;$127.99&lt;/figcaption&gt;</code>
+        <code>&lt;div class="look" id="series1"&gt;</code>
+        <code>&lt;div class="box"&gt;</code>
+        <code>&lt;figure&gt;</code>
+        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img class="click-img" src ="img/c11.jpg alt = "Lucas Base Chair"&gt;&lt;/a&gt;</code>
+        <code>&lt;figcaption&gt;&lt;p&gt;Lucas Base Chair&lt;/p&gt;</code>
+        <code>&lt;div class="price"&gt;</code>
+        <code>&lt;p&gt;$399.99&lt;p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
         <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
+        <code>&lt;figutr&gt;</code>
 
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/c2.jpg alt = "Coral Springs Armchair"&gt;&lt;/a&gt;</code>
-        <code>&lt;figcaption&gt;&lt;p&gt;Coral Springs Armchair&lt;/p&gt;&lt;/figcaption&gt;</code>
-        <code>&lt;figcaption&gt;$219.99&lt;/figcaption&gt;</code>
+        <code>&lt;figure&gt;</code>
+        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img class="click-img" src ="img/c22.jpg alt = "Roar Swivel Chair"&gt;&lt;/a&gt;</code>
+        <code>&lt;figcaption&gt;&lt;p&gt;Roar Swivel Chair&lt;/p&gt;</code>
+        <code>&lt;div class="price"&gt;</code>
+        <code>&lt;p&gt;$299.59&lt;p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
         <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
+        <code>&lt;figutr&gt;</code>
 
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/c3.jpg alt = "Granville Swoop Wingback Chair"&gt;&lt;/a&gt;</code>
-        <code>&lt;figcaption&gt;&lt;p&gt;Granville Swoop Wingback Chair&lt;/p&gt;&lt;/figcaption&gt;</code>
-        <code>&lt;figcaption&gt;$299.99&lt;/figcaption&gt;</code>
+        <code>&lt;figure&gt;</code>
+        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img class="click-img" src ="img/c33.jpg alt = "Shell Chair"&gt;&lt;/a&gt;</code>
+        <code>&lt;figcaption&gt;&lt;p&gt;Shell Chair&lt;/p&gt;</code>
+        <code>&lt;div class="price"&gt;</code>
+        <code>&lt;p&gt;$529.99&lt;p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
         <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
+        <code>&lt;figutr&gt;</code>
 
-        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img src ="img/c4.jpg alt = "Alessandro Desk Chair"&gt;&lt;/a&gt;</code>
-        <code>&lt;figcaption&gt;&lt;p&gt;Alessandro Desk Chair&lt;/p&gt;&lt;/figcaption&gt;</code>
-        <code>&lt;figcaption&gt;$142.99&lt;/figcaption&gt;</code>
+        <code>&lt;figure&gt;</code>
+        <code>&lt;a  class="image-Link" href="#"&gt;&lt;img class="click-img" src ="img/c44.jpg alt = "Lady Arm Chair"&gt;&lt;/a&gt;</code>
+        <code>&lt;figcaption&gt;&lt;p&gt;Lady Arm Chair&lt;/p&gt;</code>
+        <code>&lt;div class="price"&gt;</code>
+        <code>&lt;p&gt;$599.59&lt;p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
-        <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code>
+        <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
+        <code>&lt;figutr&gt;</code>
+
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
 
         <h4>Rendered element:</h4>
-        <div class="box">
-          <figure>
-            <a class="image-Link" href="product-a.html"><img class="click-img" src ="img/c1.jpg" alt = "Egg Chair"></a>
-            <figcaption>
-                <p>Egg Chair</p>
-                <p class="price">$327.99</p>
-            </figcaption>
-            <a class="intext-link" href="product-a.html">See Full Details</a>
-            <a class="cart" href="shopping-cart.html">Add to cart</a>
-        </figure>
-
-        <figure>
-            <a class="image-Link" href="product-b.html"><img class="click-img" src ="img/c2.jpg" alt = "Ro Chair"></a>
-            <figcaption>
-                <p>Ro Chair </p>
-                <p class="price"> $499.99 </p>
-            </figcaption>
-            <a class="intext-link" href="product-b.html">See Full Details</a>
-            <a class="cart" href="shopping-cart.html">Add to cart</a>
-        </figure>
-
-        <figure>
-            <a class="image-Link" href="product-a.html"><img class="click-img" src ="img/c3.jpg" alt = "Butterfly Chair"></a>
-            <figcaption>
-                <p>Butterfly Chair</p>
-                <p class="price">$225.99</p>
-            </figcaption>
-            <a class="intext-link" href="product-a.html">See Full Details</a>
-            <a class="cart" href="shopping-cart.html">Add to cart</a>
-        </figure>
-        
-        <figure>
-            <a class="image-Link" href="product-a.html"><img class="click-img" src ="img/c4.jpg" alt = "Lady Chair"></a>
-            <figcaption>
-                <p>Lady  Chair</p>
-                <p class="price">$342.99</p>
-            </figcaption>
-            <a class="intext-link" href="product-a.html">See Full Details</a>
-            <a class="cart" href="shopping-cart.html">Add to cart</a>
-        </figure>
+        <div class="look" id="series1">
+          <div class="box">
+            <figure>
+              <a class="image-Link" href="product-a.html"><img class="click-img" src ="img/c11.jpg" alt = "Lucas Base Chair"></a>
+              <figcaption>
+                <p>Lucas Base Chair</p>
+                <div class ="price">
+                  <p>$399.99</p>
+                </div>
+              </figcaption>
+              <a class="intext-link" href="product-a.html">See Full Details</a>
+              <a  class="cart" href="shopping-cart.html">Add to cart</a>
+            </figure>
+            
+            <figure>
+              <a class="image-Link" href="product-a.html"><img class="click-img" src ="img/c22.jpg" alt = "Roar Swivel Chair"></a>
+              <figcaption>
+                <p>Roar Swivel Chair </p>
+                <div class ="price">
+                  <p>$299.59</p>
+                </div>
+              </figcaption>
+              <a class="intext-link" href="product-a.html">See Full Details</a>
+              <a class="cart" href="shopping-cart.html">Add to cart</a>
+            </figure>
+            
+            <figure>
+              <a class="image-Link" href="product-a.html"><img class="click-img" src ="img/c33.jpg" alt = "Shell Chair"></a>
+              <figcaption>
+                <p>Shell Chair</p>
+                <div class ="price">
+                  <p>$529.99</p>
+                </div>
+              </figcaption>
+              <a class="intext-link" href="product-a.html">See Full Details</a>
+              <a class="cart" href="shopping-cart.html">Add to cart</a>
+            </figure>
+                        
+            <figure>
+              <a class="image-Link" href="product-a.html"><img class="click-img" src ="img/c44.jpg" alt = "Lady Armchair"></a>
+              <figcaption>
+                <p>Lady Armchair</p>
+                <div class ="price">
+                  <p>$599.59</p>
+                </div>
+              </figcaption>
+              <a class="intext-link" href="product-a.html">See Full Details</a>
+              <a class="cart" href="shopping-cart.html">Add to cart</a>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -388,33 +446,40 @@
           <code>&lt;/label&gt;</code>
           <code>&lt;/div&gt;</code>
           
+          
+          <code>&lt;div id="div1" class="show"&gt;</code>
+          <code>&lt;div class="form"&gt;</code> 
+          <code>&lt;div class="methods form-element"&gt;</code>
+          <code>&lt;label for="form-holder" class="label"&gt;Cardholder Name&lt;/label&gt;</code>
+          <code>&lt;input type="text" id="form-holder" placeholder="John Smith"&gt;</code>
+          <code>&lt;/div&gt;</code>
+      
+          <code>&lt;div class="methods form-element"&gt;</code>
+          <code>label for="form-card" class="label"&gt;Card Number&lt;/label&gt;</code>
+          <code>input type="text" id="form-card" placeholder="1452-3627-1123-1234"&gt; </code>
+          <code>&lt;/div&gt;</code>
+                  
+          <code>&lt;div class="methods form-element"&gt;</code>
+          <code>&lt;div class="methods form-element col"&gt;</code>
+          <code>&lt;label for="form-exp" class="label"&gt;Expiry Date&lt;/label&gt;</code>
+          <code>&lt;input type="text" id="form-exp" placeholder="Jan"&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="methods form-element col"&gt;</code>
+          <code>&lt;input type="text" id="form-expd" placeholder="2020"&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="methods form-element col"&gt;</code>
+          <code>&lt;label for="form-sec" class="label"&gt;CVV&lt;/label&gt;</code>
+          <code>&lt;input type="text" id="form-sec" placeholder="123"&gt; </code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;/div&gt;</code>
+                  
 
         <h4>Rendered element:</h4>
        
         
             <h4>Payment Options</h4>
-            <!-- <div class="radiob">
-                <ul>
-                    <li>
-                      <input type="radio" id="rbutton4" name="radio" onclick="show1();">
-                      <label for="rbutton4">Credit Card</label>
-                      <div class="check"></div>
-                    </li>
-                    
-                    <li>
-                      <input type="radio" id="rbutton5" name="radio" value="Alipay" onclick="show3();">
-                      <label for="rbutton5">Paypal</label>
-                      <div class="check"><div class="inside"></div></div>
-                    </li>
-                    
-                    <li>
-                      <input type="radio" id="rbutton6" name="radio" value="Wechat Pay" onclick="show2();">
-                      <label for="rbutton6">Alipay</label>
-                      <div class="check"><div class="inside"></div></div>
-                    </li>
-                  </ul>
-                
-            </div> -->
+         
        
              <div class="form-element">
    
@@ -434,33 +499,34 @@
             
           </div>
 
-        <div id="div1" class="show">
-          <div class="form">  
-            <div class="methods form-element">
-                <label for="form-holder" class="label">Cardholder Name</label>
-                <input type="text" id="form-holder" placeholder="John Smith"> 
-            </div> 
-
-            <div class="methods form-element">
-                <label for="form-card" class="label">Card Number</label>
-                <input type="text" id="form-card" placeholder="1452-3627-1123-1234"> 
-            </div>
-            
-            <div class="methods form-element">
-                <label for="form-exp" class="label">Expiry Date</label>
-                <input type="text" id="form-exp" placeholder="Jan">
-                <input type="text" id="form-expd" placeholder="2020">
-            </div>
-
-            <div class="methods form-element">
-                <label for="form-sec" class="label">CVV</label>
-                <input type="text" id="form-sec" placeholder="123"> 
-            </div>
-  
-            <a href="#" class="checkout-button submit-button">Proceed to checkout</a>
-              
+          <div id="div1" class="show">
+              <div class="form">  
+                  <div class="methods form-element">
+                      <label for="form-holder" class="label">Cardholder Name</label>
+                      <input type="text" id="form-holder" placeholder="John Smith"> 
+                  </div> 
+      
+                  <div class="methods form-element">
+                      <label for="form-card" class="label">Card Number</label>
+                      <input type="text" id="form-card" placeholder="1452-3627-1123-1234"> 
+                  </div>
+                  
+                  <div class="methods form-element">
+                      <div class="methods form-element col">
+                          <label for="form-exp" class="label">Expiry Date</label>
+                          <input type="text" id="form-exp" placeholder="Jan">
+                      </div>
+                      <div class="methods form-element col">
+                          <input type="text" id="form-expd" placeholder="2020">
+                      </div>
+                      <div class="methods form-element col">
+                          <label for="form-sec" class="label">CVV</label>
+                          <input type="text" id="form-sec" placeholder="123"> 
+                      </div>
+                  </div>
+                              
+              </div>
           </div>
-        </div>
         
         <div id="div2" class="hide">
           Scan QR Code to pay<br>
@@ -483,34 +549,40 @@
 
         <h4>Sample code</h4>
        
-       <code>&lt;div class="block"&gt; </code> 
-       <code>&lt;div class="box"&gt; </code>
-        <code>&lt;figure&gt;&lt;img src ="img/swoop.jpg" alt = "white chair"&gt;</figure></code> 
-        <code>&lt;figure&gt;&lt;h5&gt;Granville Wingback Chair &lt;/h5&gt;&lt;/figure&gt;</code>
+        <code>&lt;div class="blockc"&gt; </code>
+        <code>&lt;div class="box"&gt; </code> 
+        <code>&lt;div class="norder-box"&gt; </code>
+        <code>&lt;figure&gt;&lt;img class="static1" src ="img/c11.jpg" alt = "white chair"&gt;</figure></code> 
+        <code>&lt;figure&gt;&lt;h5&gt;Lucas Base Chair &lt;/h5&gt;&lt;/figure&gt;</code>
         <code>&lt;figure&gt;&lt;h5&gt;Quantity&lt;/h5&gt;</code>
         <code>&lt;div class="methods form-element"&gt;&lt;/div&gt;</code>
-        <code>&lt;input type="text" placeholder="1"&gt;</code>
+        <code>&lt;input type="text" placeholder="1" value="1"&gt;</code>
         <code>&lt;/div&gt;</code> 
         <code>&lt;a class="remove" href="#"&gt;Remove&lt;/a&gt;&lt;/figure&gt;</code>
-        <code>&lt;figure&gt;&lt;h5&gt;Total&lt;/h5&gt;</code>
-        <code>&lt;p&gt;$299.99&lt;/p&gt;&lt;/figure&gt; </code>
-        <code>/div&gt;</code>
+        <code>&lt;figure&gt;&lt;h5&gt;Price&lt;/h5&gt;</code>
+        <code>&lt;p&gt;$399.99&lt;/p&gt;&lt;/figure&gt; </code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
         <code>&lt;/div&gt;</code>
 
 
         <h4>Rendered element:</h4>
     
-        <div class="block"> 
+        <div class="blockc"> 
             <div class="box"> 
-                <figure><img src ="img/swoop.jpg" alt = "white chair"></figure> 
-                    <figure><h5>Granville Wingback Chair </h5></figure>
+             <div class="border-box">
+                <figure><img class = "static1"src ="img/c11.jpg" alt = "Lucas Base chair"></figure> 
+                    <figure><h5>Lucas Base Chair</h5></figure>
                     <figure><h5>Quantity</h5>
                         <div class="methods form-element">
-                         <input type="text" placeholder="1"> 
+                         <input type="text" placeholder="1" value="1"> 
                         </div> 
-                        <a class="remove" href="#">Remove</a></figure>
-                   <figure><h5>Total</h5>
-                       <p>$299.99</p></figure> 
+                        <a class="remove" href="#">Remove</a>
+                    </figure>
+                    <figure><h5>Price</h5>
+                    <p>$399.99</p>
+                </figure> 
+              </div>
             </div>
         </div> 
       
@@ -521,35 +593,19 @@
 
     <section id="written">
 
-      <h2>Written Part</h2>
+      <h2>Content</h2>
     <section class = "brandings">
       <h3>branding definition</h3>
-      <p>The company is a online shopping company that sells modern chairs of different styles such as office, home, decoration etcs.
-        By focusing on one paticular product, company aims to provide broader range of choices for consumers to choose. <br>
-        The potential customers of the company various. It can be anyone that needs modern styled chair with decent price and quality. 
-        But mainly,we are targeting towards people from age 20 - 55 who need work in office, need chair for meeting or at home. <br>
+      <p>The company is a online shopping company that sells modern chairs of different styles such as home, decoration etcs.
+        By focusing on selling chairs, company aims to provide broader range of choices for consumers to choose.
+        The potential customers of the company various. It can be anyone that likes modern style chairs with decent price and quality. 
+        But mainly,we are targeting towards people who are intereted in stylish and high quality chairs.
         The company is focusing on a very specified product. However, with in this type, we provide tons of options for customers to
-        choose and compare, not just in general.Also, there are always promotions and discount as well as seasonal activities, 
-        many great deals and nice prices are offered to our customers. Lastly, we have fantastic delivery service that customer can 
-        choose a quicker delivery speed with low price and they are able to track their product as well. 
+        choose and compare, not just in general. We offer great deals and nice prices to our customers. 
       </p>
     </section>
 
-    <section class = "brandings">
-      <h3>mini persona</h3>
-      <figure>
-      <a class ="image" href ="#"><img src ="img/woman.jpg" alt ="a woman"></a>
-      <figcaption>Name: Suzie<br>
-      Age: 36 year-old<br>
-      Occupation: housewife<br>
-      <p>Suzie is a housewife who loves to clean up and decorate her house to just make it look pretty or invite friends to
-        come. Recently, Suzie is going to invite friends to read books together. So she wants to get some new cozy chairs that
-        can make them feel comfortable when reading for a long time, also, the chairs should look neat and nice that they can enjoy
-        this reading environment. </p>
-      </figcaption>
-      </figure>
 
-    </section>
 
     <section class="brand components">
       <h3>brand components</h3>
@@ -565,6 +621,7 @@
   </body>
 </html>
 
+<script src="js/dropdown.js"></script>
 <script>
     
   function show1(){
