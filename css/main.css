@@ -95,6 +95,11 @@ code {
 section {
   margin-bottom:1rem;
 }
+
+.content-style{
+  margin:3rem;
+  
+}
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -589,6 +594,10 @@ option{
 
 }
 
+#citation .content-box{
+  width:100%;
+}
+
 #citations a:hover #citations a:focus{
   color:rgb(245,184,16);
   transition-property: color;
@@ -597,6 +606,8 @@ option{
 #citations li{
  padding-bottom:0.8rem;
 }
+
+
 
 .navigation {
   position: fixed;
