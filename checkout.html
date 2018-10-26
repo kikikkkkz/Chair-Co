@@ -14,9 +14,10 @@
 
     <body>
             <header>
-
+                    <!-- company logo -->
                     <span class="logo"><h1>Chair&Co</h1></span>
                 
+                    <!-- Navigation when screen at full size or before turn into dropdown menu -->
                     <ul class="menunav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -24,7 +25,8 @@
                         <li><a  href="contact.html">Contact</a></li>
                         <li><a href="shopping-cart.html" class="active-nav"><i class="material-icons">shopping_cart</i>Cart</a></li>
                     </ul>
-                
+                    
+                     <!-- dropdown menu -->
                     <nav class="box" id="menu">
                 
                         <div class="box-item-nav">
@@ -51,47 +53,49 @@
                 
             </header>
 
-            <div class="block">
+        <!-- payment title -->
+        <div class="block">
             <h1 class="payment">Payment</h1>
             <div class="box">
                 <div class="box-shipping">
-                <h4>Product Summary</h4>
-                <div class="form">  
-                      <div class="checkout-box">
-                          <div class="check-box">
-                            <div class="checkout-img">
-                             <img class = "static"src ="img/c11.jpg" alt = "white chair">
-                            </div>
-                             <div class="checkout-text">
-                             <h5>Lucas Base Chair</h5>
-                               <p>Subtotal: $399.99</p>
-                               <p>Quantity: 1</p>
-                            </div>
-                            </div>
+
+                    <!-- product summary overall for payment -->
+                    <h4>Product Summary</h4>
+                    <div class="form">  
+                        <div class="checkout-box">
                             <div class="check-box">
-                                    <div class="checkout-img">
-                                 <img class = "static"src ="img/c55.jpg" alt = "white chair">
+                                <div class="checkout-img">
+                                    <img class = "static"src ="img/c11.jpg" alt = "white chair">
                                 </div>
                                 <div class="checkout-text">
-                                        <h5>Seoto Arm Chair</h5>
-                                          <p>Subtotal: $199.99</p>
-                                          <p>Quantity: 1</p>
-                                       </div>
+                                    <h5>Lucas Base Chair</h5>
+                                    <p>Subtotal: $399.99</p>
+                                    <p>Quantity: 1</p>
                                 </div>
-                           
                             </div>
-                            <h5 class="totalp">Total: $827.98</h5>
-                </div>
+                            <div class="check-box">
+                                <div class="checkout-img">
+                                    <img class = "static"src ="img/c55.jpg" alt = "white chair">
+                                </div>
+                                <div class="checkout-text">
+                                    <h5>Seoto Arm Chair</h5>
+                                    <p>Subtotal: $199.99</p>
+                                    <p>Quantity: 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="totalp">Total: $827.98</h5>
+                    </div>
                 </div>
 
+                <!-- shipping address of customer -->
                 <div class="box-payment">
                         <h4>Shipping Address</h4>
                         <div class="form">  
                                 <div class="methods form-element">
                                     <label for="form-address" class="label">Street address</label>
                                     <input type="text" id="form-address" placeholder="Address line 1">
-                                    <input type="text" id="form-address2" placeholder="Address line 2">
-                                    
+                                    <input type="text" id="form-address2" placeholder="Address line 2"> 
                                 </div> 
                     
                                 <div class="methods form-element city">
@@ -111,22 +115,25 @@
                                     <input type="text" id="form-postal" placeholder="V1B 6F4">
                                 </div>                   
                         </div>
-                <h4>Payment Method</h4>
-                <div class="form-element">
-                        <label class="container label">Credit Card
-                        <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
-                        <span class="checkmark"></span>
-                        </label>
-                        <label class="container label">Alipay
-                        <input type="radio" name="radio" value="alipay" onclick="show2();">
-                        <span class="checkmark"></span>
-                        </label>
-                        <label class="container label">WechatPay
-                        <input type="radio" name="radio" value="wechatpay" onclick="show3();">
-                        <span class="checkmark"></span>
-                        </label>
+
+                        <!-- payment radio button options -->
+                        <h4>Payment Method</h4>
+                        <div class="form-element">
+                            <label class="container label">Credit Card
+                                <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container label">Alipay
+                                <input type="radio" name="radio" value="alipay" onclick="show2();">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container label">WechatPay
+                                <input type="radio" name="radio" value="wechatpay" onclick="show3();">
+                                <span class="checkmark"></span>
+                            </label>
                 </div>
-        
+
+                <!-- card information -->
                 <div id="div1" class="show">
                     <div class="form">  
                         <div class="methods form-element">
@@ -156,6 +163,7 @@
                     </div>
                 </div>
                 
+            <!-- payment radio button with QR code -->
                 <div id="div2" class="hide">
                     <a href="confirmation.html">
                     Scan QR Code to pay<br>
@@ -184,13 +192,13 @@
         
     
 
+ <!-- footer to include style guide, citation and course information -->
     <footer>
-            <div class = "citation">
-           
-                    <a  class="back-button" href="styleguide.html">Style Guide</a>
-                    <a  class="back-button" href="citation.html">Citation</a>
-                   <div class ="team"><p> © 2018 Fall IAT-339 P2 Team-6 Designed by Qi & Xiaofan </p></div>
-                </div>
+        <div class = "citation">
+            <a  class="back-button" href="styleguide.html">Style Guide</a>
+            <a  class="back-button" href="citation.html">Citation</a>
+            <div class ="team"><p> © 2018 Fall IAT-339 P2 Team-6 Designed by Qi & Xiaofan </p></div>
+        </div> 
     </footer>
 
     <script src="js/dropdown.js"></script>
