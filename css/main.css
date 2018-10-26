@@ -200,7 +200,6 @@ section {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border:0.05rem rgb(245,184,16) solid;
-  margin-bottom:1rem;
   color:rgb(245,184,16);
   background-color:white;
   text-transform:uppercase;
@@ -646,7 +645,11 @@ ul {
 }
 
 #write-comment input[type=submit]{
- margin:auto;
+  float: right;
+}
+
+.citation-detail{
+  margin-top:5rem;
 }
 
 @media screen and (max-width: 51.1875em) {
@@ -662,6 +665,10 @@ ul {
   .comment {
     padding-left: 0.6rem;
   }
+
+  .post{
+    margin-right: 4%;
+  }
 }
 
 @media screen and (max-width: 66.5625em) {
@@ -675,7 +682,7 @@ ul {
   }
 
   #write-comment input[type=text]{
-    width: 96%;
+    width: 100%;
   }
   
   .product-description {
@@ -1222,7 +1229,7 @@ figcaption{
   margin-bottom:0.5rem;
 }
 
-@media (max-width:700px){
+@media (max-width:680px){
  
   .checkout-text h5{
     font-size:0.8rem;
@@ -1249,27 +1256,26 @@ figcaption{
     text-align:center;
     width:100%;
   }
+
  .button-shop-full{
-  width:100%;
+  width:90%;
   margin-top:0.5rem;
   text-align:center;
-}
+  }
 
-.shrink {
+  .shrink {
     width:90%;
-}
+  }
 
-.button-shop-1{
-  width:90%;
-  text-align:center;
-}
+  .button-shop-1{
+    width:90%;
+    text-align:center;
+  }
 
-.submit-button{
-  text-align:center;
-  width:100%;
-}
-
-
+  .submit-button{
+    text-align:center;
+    width:100%;
+  }
 }
 
   .box-home figure{  
@@ -1376,6 +1382,13 @@ figcaption{
         font-size: 0.8rem;
     }
 }
+
+@media (max-width:1180px){
+  .cart-text h1 {
+    margin-left: 1.5rem;
+  }
+}
+
 
 /* Style for checkout */
 .form{
