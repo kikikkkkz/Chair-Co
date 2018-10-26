@@ -1219,42 +1219,36 @@ figcaption{
 }
   
 .checkout-text h5{
- margin-bottom:0.5rem;
-        }
+  margin-bottom:0.5rem;
+}
 
 @media (max-width:700px){
  
   .checkout-text h5{
-   font-size:0.8rem;
-           }
+    font-size:0.8rem;
+  }
   .checkout-text p {
     font-size:0.7rem;
   }
-.block h1{
+  .block h1{
     margin-left:0;
   }
-
-.citation p{
-  font-size:0.6rem;
-}
-
-.button-shop-full{
-  width:100%;
-  margin-top:0.5rem;
-  text-align:center;
-}
-
-.button-shop-1{
-  width:100%;
-  text-align:center;
-}
-
-.submit-button{
-  text-align:center;
-  width:100%;
-}
-
-
+  .citation p{
+    font-size:0.6rem;
+  }
+  .button-shop-full{
+    width:100%;
+    margin-top:0.5rem;
+    text-align:center;
+  }
+  .button-shop-1{
+    width:100%;
+    text-align:center;
+  }
+  .submit-button{
+    text-align:center;
+    width:100%;
+  }
 }
 
   .box-home figure{  
