@@ -4,39 +4,58 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Product Detail</title>
+        <title>Chair&Co - Product Detail</title>
         <link rel="icon" href="img/chair&co.png">
         <link href="css/main.css" rel="stylesheet">
-        <link href="css/nav.css" rel="stylesheet">
+        <link href="css/dropdown.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
-                <nav class="topnav">
-                        <input type="checkbox" id="checkboxnav" />
-                        <label for="checkboxnav">
-                          <span class="toggle">☰</span>
-                          <ul class="menunav">
-                            <li class="logo"> <h3>Chair&Co</h3> </li>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="shopping-cart.html">Cart</a></li>
-                            <li><a  href="contact.html">Contact</a>
-                            </li>
-                          </ul>
-                        </label>
-              
-                      </nav>
+
+                    <span class="logo"><h1>Chair&Co</h1></span>
+                
+                    <ul class="menunav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a  href="contact.html" class="active-nav">Contact</a></li>
+                        <li><a href="shopping-cart.html">Cart</a></li>
+                    </ul>
+                
+                    <nav class="box" id="menu">
+                
+                        <div class="box-item-nav">
+                            <a href="index.html" class="button bg">Home</a>
+                        </div>
+                
+                        <div class="box-item-nav">
+                            <a href="about.html" class="button bg">About</a>
+                        </div>
+                
+                        <div class="box-item-nav">
+                            <a href="products.html" class="button bg">Products</a>
+                        </div>
+                
+                        <div class="box-item-nav">
+                            <a href="contact.html" class="button bg active-nav">Contact</a>
+                        </div>
+                                
+                        <div class="box-item-nav">
+                            <a href="shopping-cart.html" class="button bg">Cart</a>
+                        </div>
+                
+                    </nav>
+                
         </header>
 
-        <section class="content">
+        <section class="content-box">
             <div class="box">
                 <div class="box-image">
-                <img class="product-img" src="img/brook.jpg" alt = "Woodleg Dining Side Chair">
+                <img class="product-img static1" src="img/c2.jpg" alt = "Ro Chair">
                 </div>
                 <div class="box-text">
-                <p class="product-name">Woodleg Dining Side Chair</p>
+                <h1>Ro Chair</h1>
                 
                     <ul>
                         <li>Dimensions: 18"W x 19"D x 32"H</li>
@@ -44,47 +63,44 @@
                         <li>Material: White ABS Frame</li>
                     </ul>
                     
-                    <p class="title">Product description</p>
+                    <h2>Product description</h2>
                     <p class="product-description">The Woodleg Dining Chair is a truly comfortable chair, it has a high flexible back with good 'give' and a deep seat pocket supported by an elegant Wood/Wire Base.</p>
 
-                    <p class="title">Product details</p>
-                    <p class="product-description">Product Dimensions: 48.3 x 45.7 x 81.3 cm ; 6.8 Kg<br>
-                        Shipping Weight: 9.6 Kg<br>
-                        Item model number: 8742354128<br>
-                        ASIN: B00768D7OK<br>
-                        Average Customer Review: 4/5<br>
-                    </p>
-                    <p class="product-price">$127.99</p>
-                    <a class="btn-cart" href="shopping-cart.html">Add to cart</a>
+                    <p class="product-price">$499.99</p>
+                    <a class="btn-cart" id="myBtn">Add to cart</a>
                 </div>
             </div>
 
             <div class="review">
-                <p class="title">Customer Reviews</p>
+                <h2>Customer Reviews</h2>
                 
                 <div class="customer-review">
                     <div class="review-left"><div class="customer">Erin Bow</div><div class="date">Oct 10, 2018</div></div>
                     <div class="comment">
-                        We loved these for six months. They are just what one would hope -- sharp-looking mid century pieces, not distinguishable from the original unless one is an expert. (We're not experts, so...)<br>
+                        <p>We loved these for six months. They are just what one would hope -- sharp-looking mid century pieces, not distinguishable from the original unless one is an expert. (We're not experts, so...)<br>
                         But then, at the six month mark, one of these struts abruptly buckled, dumping me on the floor. It seems to be irreparable. I have had no luck getting Amazon to cough up manufacturer information, though I've asked several times. If I could get a replacement, I'd be kinder to this item -- chalk the failure up as a fluke. But I can't make headway, so ... yeah. Chairs, even knock-off chairs, should not break after six months.
+                        </p>
                     </div>
                 </div>
                 <div class="customer-review">
                         <div class="review-left"><div class="customer">D.H.</div><div class="date">Mar 20, 2018</div></div>
                         <div class="comment">
-                            Be careful, many of these have manufacturing defects! You'll notice that the legs are cheap and that there are divets on the top of the chair (which should be smooth) where the legs attach on the underside.<br>
+                            <p>Be careful, many of these have manufacturing defects! You'll notice that the legs are cheap and that there are divets on the top of the chair (which should be smooth) where the legs attach on the underside.<br>
                             I bought two sets from two different sellers. The ones from the vendor exclusivemod were all defective and I returned them (and I had to pay shipping!). The ones for a now-unlisted seller were all perfect.
+                            </p>
                         </div>
                 </div>
                 <div class="customer-review">
                         <div class="review-left"><div class="customer">Tara M</div><div class="date">Jan 30, 2017</div></div>
-                        <div class="comment">I was looking high and low for this style chair for my dining room. They add a funky look to the place. Sturdy and comfortable.
+                        <div class="comment">
+                            <p>I was looking high and low for this style chair for my dining room. They add a funky look to the place. Sturdy and comfortable.
+                            </p>
                         </div>
                 </div>
             </div>
 
             <div class="review">
-                    <p class="title">Write a comment</p>
+                    <h2>Write a comment</h2>
                     <form action="#" id="write-comment">
                             <div class="methods form-element">
                                 <label for="name" class="label">Your Name:</label>
@@ -98,19 +114,62 @@
                     </form>
             </div>
         </section>
-    </body>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Item added to cart!</h2>
+            </div>
+            <div class="modal-footer">
+                <a class="button-shop" href="shopping-cart.html">View cart</a>
+            </div>
+            </div>
+        
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+    
 
     <footer>
-        
+            <div class = "citation">
+           
+                    <a  class="back-button" href="styleguide.html">Style Guide</a>
+                    <a  class="back-button" href="citation.html">Citation</a>
+                   <div class ="team"><p> © 2018 Fall IAT-339 P2 Team-6 Designed by Qi & Xiaofan </p></div>
+                </div> 
     </footer>
-</html>
 
-<script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
-        ga('create', 'UA-46156385-1', 'cssscript.com');
-        ga('send', 'pageview');
-</script>
+    <script src="js/dropdown.js"></script>
+
+</body>
+</html>
