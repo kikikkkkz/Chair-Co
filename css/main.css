@@ -34,7 +34,7 @@ h3 {
 
 h4 {
   margin-bottom: 0.25rem;
-  color:#b2b2a2;
+  color:rgb(90,90,90);
   font-size:1.2rem;
 }
 
@@ -181,7 +181,7 @@ section {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border:0.05rem rgb(245,184,16) solid;
-  
+  margin-bottom:1rem;
   color:rgb(245,184,16);
   background-color:white;
   text-transform:uppercase;
@@ -206,7 +206,7 @@ section {
 }
 
 .static{
-  max-width:50%;
+  width:100%;
   height:auto;
 }
 
@@ -964,6 +964,7 @@ ul {
 
 .message p{
   max-width:100%;
+  margin-bottom:2rem;
 }
 
 .order-number {
@@ -1283,14 +1284,20 @@ ul {
 
 .block{
   padding:0.5rem;
-  border:0.05rem  solid ;
-  border-color:rgb(245,184,16) white;
+ border:white solid 0.05rem;
   width:90%;
-  margin-top:5rem;
-  margin:auto;
-  margin-bottom:2rem;
+  margin: 0 auto;
 
   }
+
+  .block h1{
+    margin-top:3rem;
+  }
+
+.block-box{
+  border:0.05rem  solid ;
+  border-color:rgb(245,184,16) white;
+}
 
   .cart-text{
  text-align: inherit;
@@ -1316,11 +1323,37 @@ ul {
     border-color: white;
   }
 
+  .check-box{
+    border:solid 0.1rem white;
+    display:inline-block;
+    max-width:80%;
+    border-color: white;
+  }
+
   .border-color{
     border:solid 0.1rem white;
   }
  
+  .checkout-img{
+width:40%;
+float:left;
+
+  }
   
+  .checkout-text{
+width:60%;
+float:right;
+padding-left:3rem;
+  }
+
+  .checkout-text p{
+  line-height: 1rem;
+      }
+
+      
+  .checkout-text h5{
+ margin-bottom:0.5rem;
+        }
   .box-home figure{  
     padding-top:2rem;
     padding-bottom:4rem;
@@ -1376,6 +1409,7 @@ ul {
     
   }
 
+ 
   .blockc p{
     padding-top:1rem;
   }
@@ -1397,13 +1431,14 @@ ul {
 
   .totalp{
    margin-top:1rem;
-   margin-right:10rem;
+   
     margin-bottom:2rem;
+    display: block;
     float:right;
   }
 
-  .payment{
-    margin-top:3rem;
+  .payment h1{
+    margin-top:8rem;
   }
 
   .blockc input[type=text], .blockc input[type=email]{
@@ -1427,6 +1462,11 @@ ul {
   text-align: center;
   margin: 1.2rem 0;
   display: none;
+}
+
+.checkout-box{
+  border:0.05rem solid;
+  border-color:rgb(245,184,16) white;
 }
 
 .hide a {
