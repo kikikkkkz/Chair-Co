@@ -47,6 +47,7 @@ nav{
 */
 .button {
 	display: none;
+	text-align: center;
 }
 
 /*
@@ -98,7 +99,6 @@ nav{
 		color:rgb(110,110,110);
 		display: inline-block;
 		vertical-align: middle;
-		line-height: inherit;
 	  }
 	  
 	  .menunav li:hover a {
@@ -113,6 +113,10 @@ nav{
 	  .menunav li a.active-nav {
 		color: rgb(245,184,16);
 		border-top:0.2rem rgb(245,184,16) solid; 
+	  }
+
+	  .menunav li .active-nav i {
+		color: rgb(245,184,16);
 	  }
 }
 

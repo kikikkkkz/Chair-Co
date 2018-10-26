@@ -658,12 +658,6 @@ option{
   margin: 1.5rem 8%;
 }
 
-.content-box h2 {
-  text-align:center;
-  margin-top:3rem;
-}
-
-
 .product-img {
   width: 80%;
   text-align: center;
@@ -898,6 +892,9 @@ ul {
 }
 
 /*Style for contact*/
+.contact h2{
+  text-align: center;
+}
 
 #contact {
   flex-grow: 2;
@@ -951,6 +948,10 @@ ul {
   #contact input[type=reset], #contact input[type=submit] {
     width: 100%;
     margin-top: 0.5rem;
+  }
+
+  .contact h2{
+    text-align: left;
   }
 }
 
