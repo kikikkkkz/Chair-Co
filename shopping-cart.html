@@ -16,7 +16,7 @@
         <header>
 
                     <!-- company logo -->
-                    <span class="logo"><h1>Chair&Co</h1></span>
+                    <div class="logo"><h1>Chair&Co</h1></div>
                 
                     <!-- Navigation when screen at full size or before turn into dropdown menu -->
                     <ul class="menunav">
@@ -68,9 +68,10 @@
                 <div class="border-box">
                     <figure><img class = "static1"src ="img/c11.jpg" alt = "Lucas Base Chair"></figure> 
                     <figure><h5>Lucas Base Chair</h5></figure>
-                    <figure><h5>Quantity</h5>
+                    <figure>
+                        <label for="quantity"><h5>Quantity</h5></label>
                         <div class="methods form-element">
-                            <input type="text" placeholder="1" value="1"> 
+                            <input type="text" placeholder="1" value="1" id="quantity"> 
                         </div> 
                         <a class="remove" href="#">Remove</a>
                     </figure>
@@ -84,9 +85,9 @@
                  <div class="border-box">
                         <figure><img class = "static1"src ="img/c55.jpg" alt = "Seoto Arm Chair"></figure> 
                         <figure><h5>Seoto Arm Chair </h5></figure>
-                        <figure><h5>Quantity</h5>
+                        <figure><h5><label for="quantity-b">Quantity</label></h5>
                             <div class="methods form-element">
-                                <input type="text" placeholder="1" value="1"> 
+                                <input type="text" placeholder="1" value="1" id="quantity-b"> 
                             </div> 
                             <a class="remove" href="#">Remove</a>
                         </figure>
@@ -121,23 +122,3 @@
 
 </body>
 </html>
-
-<script>
-    
-        function show1(){
-            document.getElementById('div1').style.display ='block';
-            document.getElementById('div2').style.display ='none';
-            document.getElementById('div3').style.display ='none';
-        }
-        function show2(){
-            document.getElementById('div1').style.display ='none';
-            document.getElementById('div2').style.display = 'block';
-            document.getElementById('div3').style.display ='none';
-        }
-        function show3(){
-            document.getElementById('div1').style.display ='none';
-            document.getElementById('div2').style.display = 'none';
-            document.getElementById('div3').style.display ='block';
-        }
-        
-</script>
