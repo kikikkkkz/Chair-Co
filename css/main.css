@@ -976,8 +976,14 @@ ul {
   }
 
   .about-img{
+    padding:0;
+    margin:0 1rem;
     max-width: 90%;
     height:auto;
+  }
+
+  .home-text{
+    margin:0 1rem;
   }
 }
 
