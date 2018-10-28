@@ -1002,11 +1002,11 @@ ul {
 
 }
 
-.look h2{
+.product-list h2{
  text-align:center;
 }
 
-.look p{
+.product-list p{
   float:left;
   padding-left:1rem;
 }
@@ -1062,7 +1062,7 @@ ul {
   padding:0.1rem;
 }
 
-.bar{
+.divide-bar{
   border:0.03rem rgb(212, 211, 211) solid;
   border-radius:90%;
   width:50%;
@@ -1079,7 +1079,7 @@ ul {
 
 
 /* top image on home */
-.top-img{
+.top-img-home{
   background:url("../img/bcimage1.jpg");
   height:400px;
   background-position:center;
@@ -1089,7 +1089,7 @@ ul {
 }
 
 /* top image on about */
-.top-img-1{
+.top-img-about{
   background:url("../img/bcabout.jpg");
   height:400px;
   background-position:center;
@@ -1123,7 +1123,7 @@ ul {
 
 
 @media (max-width:657px){
-  .top-img{
+  .top-img-home{
     background:url("../img/bcimage1.jpg");
     height:350px;
     background-position:center;
@@ -1132,7 +1132,7 @@ ul {
     position:relative;
   }
   
-  .top-img-1{
+  .top-img-about{
     background:url("../img/bcabout.jpg");
     height:350px;
     background-position:center;
