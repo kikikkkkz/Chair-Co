@@ -1,0 +1,1505 @@
+*{
+  font-family:Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size:2rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size:1.5rem;
+  color:rgb(90,90,90);
+}
+
+h3 {
+  font-size:1.5rem;
+  margin-top: 0.5rem;
+  padding-top:1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+  color:rgb(90,90,90);
+  font-size:1.2rem;
+}
+
+h5{
+  color:rgb(90,90,90);
+  font-size:1.1rem;
+  margin-bottom:0;
+}
+
+h6{
+  color:rgb(90,90,90);
+  font-size:1.2rem;
+  margin-bottom:1.5rem;
+  margin-top:0;
+  padding-left:2.5rem;
+}
+
+p {
+  color:rgb(70,70,70);
+  margin-top: 0;
+  font-size:0.9rem;
+  margin-bottom:0.5rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+li {
+  color:rgb(70,70,70);
+  margin-top: 0;
+  max-width:40rem;
+  font-size:0.9rem;
+  margin-bottom:0.5rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+nav a{
+  font-size:1.2rem;
+  color:rgb(110,110,110);
+  text-decoration:none;
+  padding:0.75rem;
+  max-width:40rem;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  color:rgb(245,184,16);
+  transition-property:color;
+  transition-duration:0.5s;
+}
+
+code {
+  padding: 0.5rem;
+  display: block;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+.style-title {
+  margin-bottom: 2rem;
+}
+
+.style-title a{
+  display: inline-block;
+  margin: 0.4rem 0;
+  margin-right: 1.5rem;
+  padding: 0;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  font-size:1.0rem;
+  letter-spacing: 0.07em;
+  display: inline-block;
+  padding:0.75rem;
+  color:rgb(110,110,110);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-top:0.2rem transparent solid;
+  overflow:hidden;
+  margin-top:0.4rem;
+  align-self: center;
+  transition-duration: 0.3s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  border-top:0.2rem rgb(245,184,16) solid; 
+  color: rgb(245,184,16);
+}
+
+@media (max-width:800px){
+   .more p{
+    width:80%;
+  }
+
+  .about-image{
+    margin-top:3rem;
+    width:100%;
+    float:left;
+  }
+}
+
+@media screen and (max-width: 52.75em) {
+  .button-nav{
+      margin-right:0.3rem; 
+  }
+
+  nav a{
+      font-size:0.9rem;
+  }
+
+}
+
+  .intext-link {
+    text-decoration:none;
+    color:rgb(110,110,110);
+    font-size:0.9rem;
+    margin:0 1rem;
+    display: block;
+    float:right;
+  }
+
+  .home-product a{
+    font-size:0.8rem;
+    color:rgba(245,184,16,0.8);
+  }
+  
+  .intext-link:hover, .intext-link:focus{
+    color:rgb(245,184,16);
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+  }
+
+
+.intext-link-exp{
+  color:rgb(245,184,16);
+  text-decoration:none;
+  font-weight:bold;
+  padding: 0 0.2rem;
+}
+
+.intext-link-exp:hover, .intext-link-exp:focus{
+  color:rgba(245,184,16,0.7);
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+.submit-button{
+  display: inline-block;
+  font-size:0.8rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border:0.05rem rgb(245,184,16) solid;
+  color:rgb(245,184,16);
+  background-color:white;
+  text-transform:uppercase;
+  cursor: pointer;
+}
+
+.submit-button:hover, .submit-button:focus{
+  background-color:rgb(245,184,16);
+  color:white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.click-img{
+  width:15rem;
+  height:18rem;
+  transition: opacity 0.5s;
+}
+
+.box-home h4{
+ text-align:center;
+}
+
+.static{
+  width:100%;
+  height:auto;
+}
+
+.static1{
+  width:10rem;
+  height:auto;
+}
+
+@media (max-width:1280px){
+  .static1{
+    width:5rem;
+  }
+}
+
+
+.click-img:hover, .click-img:focus{
+  opacity: 0.6;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(245,184,16);
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+.cart{
+  font-size:0.8rem;
+  padding: 0.5rem 0.7rem;
+  color:rgb(245,184,16);
+  border:0.05rem rgb(245,184,16) solid;
+  text-decoration: none;
+  display:block;
+  margin-top:4.5rem;
+  margin-right:1rem;
+  margin-left:1rem;
+  text-transform: uppercase;
+}
+
+.cart a {
+  display:block;
+}
+
+.cart:hover, .cart:focus {
+  color:white;
+  background-color:rgb(245,184,16);
+  transition-property: color;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+
+/* learn more button on home page */
+.home-button{
+  font-size:0.8rem;
+  padding: 0.5rem 2.5rem;
+  color:rgb(245,184,16);
+  border:0.05rem rgb(245,184,16) solid;
+  text-decoration: none;
+  margin-top:2rem;
+  float:left;
+  text-transform: uppercase;
+}
+
+.home-button:hover, .home-button:focus {
+  color:white;
+  background-color:rgb(245,184,16);
+  transition-property: color;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#product{
+  padding-top:5rem;
+  padding-bottom:1rem;
+}
+
+.box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-top:0.5rem;
+}
+
+.box-menu{
+  display:flex;
+  flex-wrap:wrap;
+  float:right;
+}
+
+  
+.pay{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.label{
+  padding:0.2rem;
+  display:inline-block;
+  width: 10rem;
+} 
+
+/*Style input fields*/
+input[type=text], input[type=email]{
+  border: 0.05rem solid rgb(90,90,90);
+  padding:0.4rem 0.5rem;
+  margin-bottom: 0.2rem; 
+  width: 100%;
+  outline: none;
+  transition: border 0.4s;
+}
+
+input[type=text]:hover, input[type=email]:hover{
+  box-shadow: 0 0 0.3rem rgb(110,110,110);
+}
+
+input[type=text]:focus, input[type=email]:focus{
+  border: 0.05rem solid rgb(245,184,16);
+}
+
+/*Style radio button*/
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a yellow background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(245,184,16);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 0.37rem;
+  left: 0.38rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: white;
+}
+
+.price{
+  float:right;
+  margin-right:1rem;
+}
+
+option{
+  color:rgb(90,90,90);
+}
+
+.checkout-button{
+  float:right;
+}
+
+.remove{
+  text-decoration:none;
+  color:rgba(245,184,16,0.7);
+  margin-bottom:2rem;
+}
+
+.remove:hover, .remove:focus{
+  color:rgb(245,184,16);
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+.checkout{
+  color:rgb(90,90,90);
+  padding-left:2.5rem;
+}
+
+.check-button{
+  display: inline-block;
+  font-size:1.2rem;
+  padding: 0.7rem;
+  color:rgb(253, 252, 252);
+  background-color:rgb(245,184,16);
+  text-decoration: none;
+  margin-left:2.5rem;
+}
+
+.check-button:hover, .check-button:focus{
+  opacity:0.8;
+  transition-property: opacity;
+  transition-duration: 0.7s;
+}
+
+#citations a{
+  text-decoration: none;
+  color:rgb(245,184,16);
+}
+
+#citation .content-box{
+  width:90%;
+}
+
+#citations a:hover, #citations a:focus{
+  color:rgb(80,80,80);
+  transition: color 0.3s;
+}
+
+#citations li{
+  padding-bottom:0.8rem;
+}
+
+/*style for footer*/
+footer{
+  display: block;
+  margin-top:3rem;
+}
+
+.team{
+  padding-left:2rem;
+  padding-right:2rem;
+  padding-top:0.8rem;
+}
+  
+a.back-button{
+  font-size:1rem;
+  font-weight: 550;
+  color:rgb(80,80,80);
+  text-decoration:none;
+  padding:1rem;
+  max-width:40rem;
+}
+  
+a.back-button:hover, a.back-button:focus {
+  color:rgb(245,184,16);
+  transition-property:color;
+  transition-duration:0.5s;
+}
+
+.citation{
+  background-color: rgb(235, 235, 235);
+  height:10rem;
+  padding-top:4rem;
+  display:flex;
+  flex-flow: wrap;
+  align-self:center;
+  justify-content: center;
+}
+
+.style-img img{
+  max-width:100%;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.navigation a{   
+  float:left;
+}
+
+.menu{
+  float:right;
+}
+
+/*Style for product-detail*/
+.content-box {
+  margin: 1.8rem 8%;
+}
+
+.product-img {
+  width: 80%;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.5rem;
+}
+
+ul {
+  color: rgb(110,110,110);
+}
+
+
+.product-description {
+  max-width: 85%;
+  display: block;
+  padding-left: 2rem;
+}
+
+
+.box-image {
+  flex-grow: 1;
+  flex-basis: 25rem;
+}
+
+.box-text {
+  flex-grow: 2;
+  flex-basis: 18rem;
+}
+
+.product-price {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0;
+  padding-right: 2rem;
+  margin: 0.6rem 0;
+}
+
+.btn-cart {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  font-size:0.8rem;
+  padding: 0.5rem 1rem;
+  color:rgb(245,184,16);
+  border:0.05rem rgb(245,184,16) solid;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-cart:hover, .btn-cart:focus {
+  color:white;
+  background-color:rgb(245,184,16);
+  transition-property: color;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.customer-review {
+  display: block;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.review {
+  margin: 1rem 0;
+}
+
+.review-left {
+  display: inline-block;
+  padding-right: 1rem; 
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 9.5rem;
+}
+
+.customer {
+  font-weight: bold;
+  color: rgb(70,70,70);
+}
+
+.date {
+  color: rgb(110,110,110);
+  font-size: 0.9rem;
+  padding-top: 0.1rem;
+}
+
+.comment {
+  color: rgb(70,70,70);
+  display: inline-block;
+  vertical-align: top;
+  max-width: 80%;
+}
+
+#write-comment {
+  margin: 0 1rem;
+}
+
+#write-comment input[type=text]{
+  flex-grow: 1;
+  flex-basis: 80%;
+  width: 80%;
+}
+
+#write-comment input[type=submit]{
+  float: right;
+}
+
+.citation-detail{
+  margin-top:5rem;
+}
+
+@media screen and (max-width: 51.1875em) {
+  .product-img {
+    width: 96%;
+  }
+}
+
+@media screen and (min-width: 66.5625em) {
+  .review-left {
+    border-right: solid rgb(245,184,16) 0.2rem;
+  }
+
+  .comment {
+    padding-left: 0.6rem;
+  }
+
+  .post{
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 66.5625em) {
+  .review-left {
+    border-bottom: solid rgb(245,184,16) 0.2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .comment {
+    max-width: 95%;
+  }
+
+  #write-comment input[type=text]{
+    width: 100%;
+  }
+  
+  .product-description {
+    max-width: 95%;
+    padding-left: 1rem;
+  }
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.5s;
+  animation-name: fadeIn;
+  animation-duration: 0.5s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.6s;
+  animation-name: slideIn;
+  animation-duration: 0.6s
+}
+
+/* The Close Button */
+.close {
+  color: rgb(110,110,110);
+  float: right;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(245,184,16);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 0.4rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.modal-footer {
+  padding: 1rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {top: -300px; opacity: 0} 
+  to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+/*Style for contact*/
+.contact h1{
+  text-align: center;
+}
+
+#contact {
+  flex-grow: 2;
+  text-align: center;
+}
+
+#contact input[type=text], #contact input[type=email]{
+  width: 60%;
+}
+
+#contact textarea {
+  width: 60%;
+  padding:0.4rem 0.5rem;
+  margin-right: 0;
+  box-sizing: border-box;
+  border: 0.05rem solid rgb(90,90,90);
+  outline: none;
+  resize: none;
+}
+
+#contact textarea:hover {
+  box-shadow: 0 0 0.3rem rgb(110,110,110);
+}
+
+#contact textarea:focus {
+  border: 0.05rem solid rgb(245,184,16);
+}
+
+.bottom {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.bottom a {
+  color: rgb(110,110,110);
+}
+
+.bottom a:hover {
+  color: rgb(245,184,16);
+}
+
+@media screen and (max-width:680px) {
+  #contact {
+    text-align: left;
+  }
+
+  #contact input[type=text], #contact input[type=email], #contact textarea{
+    width: 100%;
+  }
+
+  #contact input[type=reset], #contact input[type=submit] {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .contact h1{
+    text-align: left;
+  }
+}
+
+/*Style for confirmation*/
+.message {
+  display: block;
+  margin-top: 4.5rem;
+  margin-bottom:12rem;
+  text-align: center;
+}
+
+.message p{
+  max-width:100%;
+  margin-bottom:2rem;
+}
+
+.order-number {
+  color: rgb(110,110,110);
+}
+
+.message i {
+  font-size: 4em;
+  color: rgb(245,184,16);
+}
+
+.button-shop {
+  display: inline-block;
+  font-size:0.8rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background-color:white;
+  border:0.05rem rgb(245,184,16) solid;
+  color:rgb(245,184,16);
+  text-transform:uppercase;
+}
+
+.button-shop:hover, .button-shop:focus{
+  background-color:rgb(245,184,16);
+  border:0.05rem rgb(245,184,16) solid;
+  color:white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-shop-1 {
+  display: inline-block;
+  font-size:0.8rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background-color:white;
+  border:0.05rem rgb(245,184,16) solid;
+  color:rgb(245,184,16);
+  text-transform:uppercase;
+}
+
+.button-shop-1:hover, .button-shop-1:focus{
+  background-color:rgb(245,184,16);
+  border:0.05rem rgb(245,184,16) solid;
+  color:white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.more .button-shop {
+  margin-bottom:5rem;
+}
+
+.button-shop-full {
+  display: inline-block;
+  font-size:0.8rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+
+  border:0.05rem rgb(245,184,16) solid;
+  color:white;
+  background-color:rgb(245,184,16);
+  text-transform:uppercase;
+}
+
+.button-shop-full:hover, .button-shop-full:focus{
+  background-color:white;
+  border:0.05rem rgb(245,184,16) solid;
+  color:rgb(245,184,16);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-cart{
+  text-align:center;
+  margin-top:1rem;
+}
+
+/*fly in animation*/
+@-webkit-keyframes slideInFromTop {
+  0% {
+    transform: translateY(-180%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-180%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.flyin{
+  -webkit-animation: slideInFromTop 1s ease-out 0s 1;
+  animation: slideInFromTop 1s ease-out 0s 1;
+}
+
+/* Style for about page*/
+.about-img{
+  max-width: 80%;
+  height:auto;
+  padding-left:8rem;
+  align-self:center;
+  justify-content: center;
+}
+
+.about-image {
+  flex-grow: 2;
+  flex-basis: 400px;
+  align-self:center;
+  justify-content: center;
+}
+
+
+.about-text{
+  flex-grow: 2;
+  flex-basis: 18rem;
+  margin-left:8rem;
+}
+
+@media (max-width:780px) {
+  .about-text{
+    flex-grow: 2;
+    flex-basis: 18rem;
+    margin:auto;
+    margin-top:0;
+  }
+
+  .about-img{
+    max-width: 90%;
+    height:auto;
+  }
+}
+
+/* style for home page */
+.top-text{
+  float:left;
+  position:absolute;
+  color:rgb(110,110,110);
+  font-weight: lighter;
+  top:38%;
+  left:35%;
+  max-width:25rem;
+  transform: translate(-50%,-50%);
+}
+
+.home-text{
+  flex-grow: 2;
+  flex-basis: 18rem;
+  margin-left:5rem;
+  display:block;
+}
+
+.product-list h2{
+ text-align:center;
+}
+
+.product-list p{
+  float:left;
+  padding-left:1rem;
+}
+.product-intro{
+  margin-bottom:6rem;
+}
+
+.header-big{
+  text-align: center;
+  margin-top:3rem;
+}
+
+.more{
+  display:flex;
+  flex-flow: wrap;
+  margin-top:3rem;
+  align-self:center;
+  justify-content: center;
+}
+
+.more p{
+  text-align:center;
+  max-width:45rem;
+}
+
+.more h2{
+  margin-top:4rem;
+}
+
+@media (max-width:680px){
+  .more p{
+    max-width:25rem;
+  }
+
+  .style-title .intext-link-exp{
+    width: 100%;
+  }
+
+}
+
+.content {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  margin: 0 10em;
+}
+@media (max-width:780px){
+  .content{
+   margin:0 2rem;
+  }
+
+  .home-text{
+    margin: 0 1rem;
+  }
+
+  .about-img{
+    padding: 0;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width:720px){
+
+  .box figure{
+   max-width:100%;
+  }
+
+  .top-text p{
+    max-width:13rem;
+  }
+
+
+  .border-box h5{
+    vertical-align: top;
+  }
+ 
+}
+/* small elements on home page */
+.dot{
+  height:3px;
+  width:20px;
+  background-color:rgb(243, 198, 75);
+  display:inline-block;
+  margin:auto;
+  padding:0.1rem;
+  margin-left:47rem;
+}
+
+.dot-n{
+  height:3px;
+  width:20px;
+  background-color:rgb(216, 215, 212);
+  display:inline-block;
+  margin:auto;
+  padding:0.1rem;
+}
+
+.divide-bar{
+  border:0.03rem rgb(212, 211, 211) solid;
+  border-radius:90%;
+  width:50%;
+  margin:auto;
+}
+
+.bar-cart{
+  border:0.03rem rgb(212, 211, 211) solid;
+  border-radius:90%;
+  width:84%;
+  margin:auto;
+}
+
+
+/* top image on home page */
+.top-img-home{
+  background:url("../img/bcimage1.jpg");
+  height:400px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+/* top image on product */
+.top-img-product{
+  background:url("../img/product.jpg");
+  height:400px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+/* top image on about */
+.top-img-about{
+  background:url("../img/bcabout.jpg");
+  height:400px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative
+}
+
+/* top image on contact*/
+.top-img-contact{
+  background:url("../img/bccontact2.jpg");
+  height:400px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+@media (max-width:672px){
+/* top image on home page */
+.top-img-home{
+  background:url("../img/bcimage1.jpg");
+  height:350px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+/* top image on product */
+.top-img-product{
+  background:url("../img/product.jpg");
+  height:350px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+/* top image on about */
+.top-img-about{
+  background:url("../img/bcabout.jpg");
+  height:350px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative
+}
+
+/* top image on contact*/
+.top-img-contact{
+  background:url("../img/bccontact2.jpg");
+  height:350px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+}
+
+.about-text-2{
+  flex-grow: 2;
+  flex-basis: 18rem;
+  margin-right:8rem;
+}
+
+
+.about-img-2{
+  max-width: 70%;
+  height:auto;
+  float:right;
+}
+
+.about-image-2 {
+  flex-grow: 2;
+  flex-basis: 400px;
+  max-width:90%;
+  padding-top:3rem;
+  margin:auto;
+}
+
+/* shopping cart styling */
+.container-block{
+  flex-flow: wrap;
+  display:flex;
+  margin-top:3rem;
+}
+
+.block{
+  padding:0.5rem;
+  border:white solid 0.05rem;
+  width:90%;
+  margin: 0 auto;
+
+  }
+
+.block h1{
+  margin-top:3rem;
+}
+
+.block-box{
+  border:0.05rem  solid ;
+  border-color:rgb(245,184,16) white;
+}
+
+.cart-text{
+  text-align: inherit;
+  margin-top:3rem;
+}
+  
+figure{   
+    padding-bottom:2rem;
+    max-width:18rem;
+    text-align:center;
+    justify-content: center;
+}
+
+figcaption{
+  margin-top:0.5rem;
+}
+
+.border-box{
+    border:solid 0.1rem white;
+    display:inherit;
+    width:70rem;
+    border-color: white;
+}
+
+.check-box{
+    border:solid 0.1rem white;
+    display:inline-block;
+    max-width:80%;
+    margin-top:0.5rem;
+    border-color: white;
+}
+
+.border-color{
+  border:solid 0.1rem white;
+}
+ 
+.checkout-img{
+  width:40%;
+  float:left;
+
+}
+  
+.checkout-text{
+  width:60%;
+  float:right;
+  padding-left:3rem;
+}
+
+.checkout-text p{
+  line-height: 1rem;
+}
+  
+.checkout-text h5{
+  margin-bottom:0.5rem;
+}
+
+@media (max-width:680px){
+ 
+  .checkout-text h5{
+    font-size:0.8rem;
+  }
+  .checkout-text p {
+    font-size:0.7rem;
+  }
+  .block h1{
+    margin-left:0;
+  }
+  
+  .button-shop-full{
+    width:100%;
+    margin-top:0.5rem;
+    text-align:center;
+  }
+  .button-shop-1{
+    width:100%;
+    text-align:center;
+  }
+  .submit-button{
+    text-align:center;
+    width:100%;
+  }
+
+ .button-shop-full{
+  width:100%;
+  margin-top:0.5rem;
+  text-align:center;
+  }
+
+  .shrink {
+    width:90%;
+  }
+
+  .button-shop-1{
+    width:90%;
+    text-align:center;
+  }
+
+  .submit-button{
+    text-align:center;
+    width:100%;
+  }
+}
+
+  .box-home figure{  
+    padding-top:2rem;
+    padding-bottom:4rem;
+    max-width:44.5%;
+    display:inline-block;
+  }
+
+  .jump-page{
+    margin-top:1rem;
+    text-align:center;
+  }
+
+  .more-l{
+  float:left;
+  }
+
+  .more-r{
+   float:right;
+  }
+
+  .block figure{
+    max-width:30rem;
+  }
+  
+  .blockc figure{
+    max-width: 20rem;
+    padding:0 0;
+  }
+
+  .blockc{
+    border:0.05rem solid;
+    border-color:rgb(245,184,16) white;
+    width:70%;
+    margin:auto;
+  }
+
+
+  .blockc remove{
+    text-align:center;
+  }
+
+
+  .blockc p{
+    padding-top:1rem;
+  }
+
+  .blockd figure{
+    max-width:12rem;
+  }
+  .blockd p{
+    padding-top:1rem;
+    
+  }
+
+  .blockc remove{
+    text-align:center;
+    justify-content: center;
+    align-self: center;
+    padding-top:1rem;
+  }
+
+  .totalp{
+   margin-top:1rem;
+   
+    margin-bottom:2rem;
+    display: block;
+    float:right;
+  }
+
+  .payment h1{
+    margin-top:8rem;
+  }
+
+  .blockc input[type=text], .blockc input[type=email]{
+    width: 45%;
+  }
+
+@media (max-width:640px){
+    .border-box figure{
+        margin: 0.6rem 0.7rem;
+    }
+
+    .border-box {
+        margin-bottom: 0.6rem;
+    }
+    .border-box h5 {
+        font-size: 0.9rem;
+    }
+
+    .border-box a, .border-box p {
+        font-size: 0.8rem;
+    }
+
+    .citation {
+      padding-top: 2rem;
+    }
+
+    .citation p{
+      font-size:0.75rem;
+    }
+
+    div.team {
+      padding: 0;
+    }
+}
+
+@media (max-width:1180px){
+  .cart-text h1 {
+    margin-left: 1.5rem;
+  }
+}
+
+/* Style for checkout */
+.form{
+  margin-top:0.5rem;
+  display:inline-block;
+  width: 100%;
+}
+
+.form-element {
+  margin: 0.8rem 0;
+}
+
+.hide {
+  border: 0.05rem rgb(110,110,110) solid;
+  padding: 0.8rem;
+  text-align: center;
+  margin: 1.2rem 0;
+  display: none;
+}
+
+.checkout-box{
+  border:0.05rem solid;
+  border-color:rgb(245,184,16) white;
+}
+
+.hide a {
+  text-decoration: none;
+  color: rgb(70,70,70);
+}
+
+.box-shipping {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-right: 4rem;
+  min-width: 400px;
+}
+
+.box-payment {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-right: 4rem;
+}
+
+.col {
+  display: inline-block;
+  width: 32.4%;
+}
+
+@media screen and (max-width:882px) {
+  .box-shipping {
+    padding: 1rem;
+  }
+
+  .box-payment {
+    padding-right: 0;
+  }
+}
