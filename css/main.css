@@ -1110,7 +1110,7 @@ ul {
 
 /* top image on home page */
 .top-img-home{
-  background:url("../img/bcimage1.jpg");
+  background:url("../img/bchome1.jpg");
   height:400px;
   background-position:center;
   background-repeat:no-repeat;
@@ -1150,7 +1150,7 @@ ul {
 @media (max-width:672px){
 /* top image on home page */
 .top-img-home{
-  background:url("../img/bcimage1.jpg");
+  background:url("../img/bchome1.jpg");
   height:350px;
   background-position:center;
   background-repeat:no-repeat;
