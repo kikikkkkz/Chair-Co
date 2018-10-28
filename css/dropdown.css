@@ -14,6 +14,11 @@
 	padding-top: 0.2rem;
 }
 
+.logo a {
+	text-decoration: none;
+	color: #000;
+}
+
 nav{
 	max-width: 100%;
 	justify-content: flex-end;
@@ -21,9 +26,7 @@ nav{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-/*
-	Setting the defaults for our flex container. Revisit Week 3's tutorial for more detail.
-*/
+/*Setting the defaults for flex container*/
 .box {
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -36,39 +39,24 @@ nav{
 	justify-content: space-around;
 }
 
-/*
-	Starting from a 'mobile-first' approach, setting the flex-basis to 100% means that all the buttons will be the full with of the page until the media-query (at the bottom of the document) kicks in.
-*/
 .box-item-nav {
 	flex-basis: auto;
 }
 
-/*
-	A generic button class to make sure that all buttons follow a similar style and structure.
-*/
 .button {
 	display: none;
 	text-align: center;
 	background-color: #FFF;
 }
 
-/*
-	Specific classes for backgrounds to help distinguish the different buttons.
-*/
 .bg {
 	background-color: #FFF;
 }
 
-/*
-	Here we have added a simple class that will allow us to toggle the visibility of an element on (or off) for the purposes of showing and hiding our menu.
-*/
+/*A class that allow toggle the visibility of an element*/
 .hidden {
 	display: none;
 }
-
-/*
-	A media-query which helps to make the navigation buttons wrap differently once the display width is above 27em.
-*/
 
 @media (min-width: 680px) {
 	.menunav {
@@ -92,6 +80,7 @@ nav{
 		color:rgb(110,110,110);
 		padding:0.75rem;
 		max-width:40rem;
+		transition-duration: 0.3s;
 	  }
 
 	  .menunav li i {
@@ -103,12 +92,12 @@ nav{
 		vertical-align: middle;
 	  }
 	  
-	  .menunav li:hover a {
+	  .menunav li a:hover, .menunav li a:focus {
 		color: rgb(245,184,16);
 		border-top:0.2rem rgb(245,184,16) solid; 
 	  }
 
-	  .menunav li:hover i {
+	  .menunav li:hover i, .menunav li:focus i {
 		color: rgb(245,184,16);
 	  }
 
@@ -178,6 +167,7 @@ nav{
 		line-height: 35px;
 		height: 55px;
 		align-self: center;
+		transition-duration: 0.3s;
 	}
 
 	.button i{

@@ -4,29 +4,69 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P02 - Style Guide</title>
+    <title>Chair&Co - Style Guide</title>
+    <link rel="icon" href="img/chair&co.png">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/dropdown.css" rel="stylesheet">
+    <link href="css/dropdown.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+
   </head>
 
   <body>
     <header>
-      <h1>P02 - Style Guide</h1>
-
-      <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="citation.html">Citations</a>
-        <a href="index.html">Website</a>
+      <!-- company logo -->
+      <div class="logo"><h1>Chair&Co</h1></div>
+                
+      <!-- Navigation when screen at full size or before turn into dropdown menu -->
+      <ul class="menunav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a  href="contact.html">Contact</a></li>
+          <li><a href="shopping-cart.html"><i class="material-icons">shopping_cart</i>Cart</a></li>
+      </ul>
+  
+      <!-- dropdown menu -->
+      <nav class="box" id="menu">
+  
+          <div class="box-item-nav">
+              <a href="index.html" class="button bg active-nav">Home</a>
+          </div>
+  
+          <div class="box-item-nav">
+              <a href="about.html" class="button bg">About</a>
+          </div>
+  
+          <div class="box-item-nav">
+              <a href="products.html" class="button bg">Products</a>
+          </div>
+  
+          <div class="box-item-nav">
+              <a href="contact.html" class="button bg">Contact</a>
+          </div>
+                  
+          <div class="box-item-nav">
+              <a href="shopping-cart.html" class="button bg"><i class="material-icons">shopping_cart</i>Cart</a>
+          </div>
       </nav>
-    
+
+      
+
     </header>
-<div class="content-style">
+
+  <div class="content-box">
+    <!-- TITLE -->
+    <div class="style-title">
+        <h1>Style Guide</h1>
+          <a href="#interactive_elements" class="intext-link-exp">Interactive Elements</a>
+          <a href="#text_elements" class="intext-link-exp">Text Elements</a>
+          <a href="#combined_elements" class="intext-link-exp">Combined Elements</a>
+    </div>
+
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
-
 
       <section class="element">
         <h3>In-text link</h3>
@@ -65,15 +105,15 @@
         <h3>Submit/Reset Buttons</h3>
         
         <h4>CSS selector:</h4>
-        <p>.submit-button</p>
+        <p>.submit-button, .reset-button</p>
 
         <h4>Sample code:</h4>
         <code>&lt;a class="submit-button" href="#" &gt;SUBMIT&lt;/a&gt;</code>
-        <code>&lt;a class="submit-button" href="#" &gt;RESET&lt;/a&gt;</code>
+        <code>&lt;a class="reset-button" href="#" &gt;RESET&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="submit-button" href="#">SUBMIT</a>
-        <a class="submit-button" href="#">RESET</a>
+        <a class="submit-button button-shop-1" href="#">SUBMIT</a>
+        <a class="submit-button button-shop-full" href="#">RESET</a>
       </section>
 
       <!-- input field styling -->
@@ -85,14 +125,14 @@
 
         <h4>Sample code:</h4>
         <code>&lt;form&gt;</code>
-        <code>&lt;label for="form-label"&gt;Input:&lt;/label&gt;</code>
-        <code>&lt;input type="text" id="form=field"&gt;</code>
+        <code>&lt;label for="form-input"&gt;Input:&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="form-input"&gt;</code>
         <code>&lt;/form&gt;</code>
 
         <h4>Rendered element:</h4>
 
-          <label for="form-label" class="label">Input:</label>
-          <input type="text" id="form-label" placeholder = "Input your text"> 
+          <label for="form-input" class="label">Input:</label>
+          <input type="text" id="form-input" placeholder = "Input your text"> 
 
       </section>
 
@@ -336,7 +376,7 @@
         <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
         <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
-        <code>&lt;figutr&gt;</code>
+        <code>&lt;figure&gt;</code>
 
         <code>&lt;figure&gt;</code>
         <code>&lt;a  class="image-Link" href="#"&gt;&lt;img class="click-img" src ="img/c22.jpg alt = "Roar Swivel Chair"&gt;&lt;/a&gt;</code>
@@ -347,7 +387,7 @@
         <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
         <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
-        <code>&lt;figutr&gt;</code>
+        <code>&lt;figure&gt;</code>
 
         <code>&lt;figure&gt;</code>
         <code>&lt;a  class="image-Link" href="#"&gt;&lt;img class="click-img" src ="img/c33.jpg alt = "Shell Chair"&gt;&lt;/a&gt;</code>
@@ -358,7 +398,7 @@
         <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
         <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
-        <code>&lt;figutr&gt;</code>
+        <code>&lt;figure&gt;</code>
 
         <code>&lt;figure&gt;</code>
         <code>&lt;a  class="image-Link" href="#"&gt;&lt;img class="click-img" src ="img/c44.jpg alt = "Lady Arm Chair"&gt;&lt;/a&gt;</code>
@@ -369,7 +409,7 @@
         <code>&lt;/figcaption&gt;</code>
         <code>&lt;a  class="intext-link" href="#"&gt;See Full Details&lt;/a&gt;</code>
         <code>&lt;a  class="cart" href="#"&gt;Add to cart&lt;/a&gt;</code><br>
-        <code>&lt;figutr&gt;</code>
+        <code>&lt;figure&gt;</code>
 
         <code>&lt;/div&gt;</code>
         <code>&lt;/div&gt;</code>
@@ -618,19 +658,27 @@
     <!-- branding imagery -->
     <section class="brand components">
       <h3>brand components</h3>
-      <a class ="image" href ="#"><img src ="img/imagery.jpg" alt ="brand components"></a>
+      <div class="style-img"><img src ="img/imagery.jpg" alt ="brand components"></div>
     </section>
   </section>
+  </div>
 
+  <!-- footer to include style guide, citation and course information -->
+  <footer>
+      <div class = "citation citation-detail">
+          <a  class="back-button" href="styleguide.html">Style Guide</a>
+          <a  class="back-button" href="https://gitlab1.its.sfu.ca/xiaofanl/iat339-f18-g6.git">GitLab</a>
+          <a  class="back-button" href="citation.html">Citation</a>
+          <div class ="team"><p> © 2018 Fall IAT-339 P2 Team-6 Designed by Qi & Xiaofan </p></div>
+      </div> 
+  </footer>
 
-   
+  <script src="js/dropdown.js"></script>
 
-
-</div>
   </body>
 </html>
 
-<script src="js/dropdown.js"></script>
+
 <script>
     
   function show1(){
@@ -649,14 +697,4 @@
       document.getElementById('div3').style.display ='block';
   }
   
-</script>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-46156385-1', 'cssscript.com');
-    ga('send', 'pageview');
 </script>

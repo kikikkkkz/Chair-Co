@@ -1,6 +1,3 @@
-/* 
-  STYLE GUIDE STYLING  */
-
 *{
   font-family:Helvetica, sans-serif;
 }
@@ -77,53 +74,55 @@ nav a{
 
 nav a:hover, nav a:focus {
   text-decoration: none;
-  Color:rgb(245,184,16);
+  color:rgb(245,184,16);
   transition-property:color;
   transition-duration:0.5s;
 }
 
 code {
-
   padding: 0.5rem;
   display: block;
 }
 
 section {
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
-.content-style{
-  margin:3rem;
-  
+.style-title {
+  margin-bottom: 2rem;
 }
+
+.style-title a{
+  display: inline-block;
+  margin: 0.4rem 0;
+  margin-right: 1.5rem;
+  padding: 0;
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
 .button-nav {
-  font-size:1.2rem;
+  font-size:1.0rem;
+  letter-spacing: 0.07em;
   display: inline-block;
-  margin-top:0.5rem;
-  padding: 0.5rem;
-  margin-right:1.5rem;
-  color:rgb(80,80,80);
+  padding:0.75rem;
+  color:rgb(110,110,110);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-top:0.2rem transparent solid;
   overflow:hidden;
-}
-
-.button-nav a{
-  float: left;
-  display: block;
-  text-align: center;
-  text-decoration: none;
+  margin-top:0.4rem;
+  align-self: center;
+  transition-duration: 0.3s;
 }
 
 .button-nav:hover, .button-nav:focus {
   border-top:0.2rem rgb(245,184,16) solid; 
+  color: rgb(245,184,16);
 }
 
 @media (max-width:800px){
@@ -131,7 +130,6 @@ section {
     width:80%;
   }
 
-  
   .about-image{
     margin-top:3rem;
     width:100%;
@@ -145,7 +143,7 @@ section {
   }
 
   nav a{
-      font-size:0.6rem;
+      font-size:0.9rem;
   }
 
 }
@@ -176,7 +174,6 @@ section {
   text-decoration:none;
   font-weight:bold;
   padding: 0 0.2rem;
-  
 }
 
 .intext-link-exp:hover, .intext-link-exp:focus{
@@ -286,7 +283,6 @@ section {
   transition-property: background-color;
   transition-duration: 0.5s;
 }
-
 
 #product{
   padding-top:5rem;
@@ -402,7 +398,6 @@ input[type=text]:focus, input[type=email]:focus{
   background: white;
 }
 
-
 .price{
   float:right;
   margin-right:1rem;
@@ -413,17 +408,12 @@ option{
 }
 
 .checkout-button{
- 
   float:right;
 }
-
 
 .remove{
   text-decoration:none;
   color:rgba(245,184,16,0.7);
- 
-  margin-right:0.7rem;
- 
   margin-bottom:2rem;
 }
 
@@ -446,7 +436,6 @@ option{
   background-color:rgb(245,184,16);
   text-decoration: none;
   margin-left:2.5rem;
-  
 }
 
 .check-button:hover, .check-button:focus{
@@ -457,25 +446,62 @@ option{
 
 #citations a{
   text-decoration: none;
-  color:rgb(80,80,80);
-
+  color:rgb(245,184,16);
 }
 
 #citation .content-box{
   width:90%;
 }
 
-#citations a:hover #citations a:focus{
-  color:rgb(245,184,16);
-  transition-property: color;
+#citations a:hover, #citations a:focus{
+  color:rgb(80,80,80);
+  transition: color 0.3s;
 }
 
 #citations li{
- padding-bottom:0.8rem;
- 
+  padding-bottom:0.8rem;
 }
 
+/*style for footer*/
+footer{
+  display: block;
+  margin-top:3rem;
+}
 
+.team{
+  padding-left:2rem;
+  padding-right:2rem;
+  padding-top:0.8rem;
+}
+  
+a.back-button{
+  font-size:1rem;
+  font-weight: 550;
+  color:rgb(80,80,80);
+  text-decoration:none;
+  padding:1rem;
+  max-width:40rem;
+}
+  
+a.back-button:hover, a.back-button:focus {
+  color:rgb(245,184,16);
+  transition-property:color;
+  transition-duration:0.5s;
+}
+
+.citation{
+  background-color: rgb(235, 235, 235);
+  height:10rem;
+  padding-top:4rem;
+  display:flex;
+  flex-flow: wrap;
+  align-self:center;
+  justify-content: center;
+}
+
+.style-img img{
+  max-width:100%;
+}
 
 .navigation {
   position: fixed;
@@ -517,7 +543,6 @@ option{
 
 
   .border-box h5{
-    
     vertical-align: top;
   }
  
@@ -525,7 +550,7 @@ option{
 
 /*Style for product-detail*/
 .content-box {
-  margin: 1.5rem 8%;
+  margin: 1.8rem 8%;
 }
 
 .product-img {
@@ -648,6 +673,7 @@ ul {
     width: 96%;
   }
 }
+
 @media screen and (min-width: 66.5625em) {
   .review-left {
     border-right: solid rgb(245,184,16) 0.2rem;
@@ -681,9 +707,7 @@ ul {
     padding-left: 1rem;
   }
 
-  
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -892,8 +916,6 @@ ul {
   margin-bottom:5rem;
 }
 
-
-
 .button-shop-full {
   display: inline-block;
   font-size:0.8rem;
@@ -919,7 +941,7 @@ ul {
   margin-top:1rem;
 }
 
-
+/*fly in animation*/
 @-webkit-keyframes slideInFromTop {
   0% {
     transform: translateY(-180%);
@@ -944,7 +966,6 @@ ul {
 }
 
 /* Style for about page*/
-
 .about-img{
   max-width: 80%;
   height:auto;
@@ -1049,6 +1070,10 @@ ul {
 @media (max-width:680px){
   .more p{
     max-width:25rem;
+  }
+
+  .style-title .intext-link-exp{
+    width: 100%;
   }
 }
 
@@ -1231,9 +1256,7 @@ figcaption{
   .block h1{
     margin-left:0;
   }
-  .citation p{
-    font-size:0.6rem;
-  }
+  
   .button-shop-full{
     width:100%;
     margin-top:0.5rem;
@@ -1249,7 +1272,7 @@ figcaption{
   }
 
  .button-shop-full{
-  width:90%;
+  width:100%;
   margin-top:0.5rem;
   text-align:center;
   }
@@ -1279,17 +1302,6 @@ figcaption{
   .jump-page{
     margin-top:1rem;
     text-align:center;
-  }
-  .remove{
-    text-decoration:none;
-    color:rgba(245,184,16,0.7);
-    margin-bottom:2rem;
-  }
-  
-  .remove:hover, .remove:focus{
-    color:rgb(245,184,16);
-    transition-property: color; 
-    transition-duration: 0.5s;
   }
 
   .more-l{
@@ -1372,6 +1384,18 @@ figcaption{
     .border-box a, .border-box p {
         font-size: 0.8rem;
     }
+
+    .citation {
+      padding-top: 2rem;
+    }
+
+    .citation p{
+      font-size:0.75rem;
+    }
+
+    div.team {
+      padding: 0;
+    }
 }
 
 @media (max-width:1180px){
@@ -1379,7 +1403,6 @@ figcaption{
     margin-left: 1.5rem;
   }
 }
-
 
 /* Style for checkout */
 .form{
@@ -1409,42 +1432,6 @@ figcaption{
   text-decoration: none;
   color: rgb(70,70,70);
 }
-
-footer{
-  display: block;
-  margin-top:3rem;
-}
-
-.team{
-  padding-left:2rem;
-  padding-top:0.8rem;
-}
-  a.back-button{
-    font-size:1rem;
-    color:rgb(80,80,80);
-    text-decoration:none;
-    padding:1rem;
-    max-width:40rem;
-  
-  }
-  
-  a.back-button:hover, a.back-button:focus {
-    text-decoration:none;
-    Color:rgb(245,184,16);
-    transition-property:color;
-    transition-duration:0.5s;
-  }
-
-  .citation{
-    background-color: rgb(235, 235, 235);
-    height:10rem;
-    padding-top:4rem;
-    display:flex;
-    flex-flow: wrap;
-    align-self:center;
-    justify-content: center;
-  }
-
 
 .box-shipping {
   flex-grow: 1;
