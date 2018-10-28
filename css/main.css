@@ -982,16 +982,6 @@ ul {
 }
 
 /* style for home page */
-.top-img{
-  background:url("http://64.62.135.129/uploads/images/set-1.jpg");
-  height:520px;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  position:relative;
-  
-}
-
 
 .top-text{
   float:left;
@@ -1087,49 +1077,95 @@ ul {
   margin:auto;
 }
 
-/* top image on product */
-.top-img-2{
- 
-  background:url("../img/product.jpg");
-  height:450px;
-  width:100%;
-  background-position:center center;
-  
+
+/* top image on home */
+.top-img{
+  background:url("../img/bcimage1.jpg");
+  height:400px;
+  background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
-
-
-  
+  position:relative;
 }
 
 /* top image on about */
 .top-img-1{
   background:url("../img/bcabout.jpg");
-  height:520px;
+  height:400px;
   background-position:center;
- 
   background-repeat:no-repeat;
   background-size:cover;
   position:relative;
-  
 }
 
-/* top image on contact*/
-.top-img-3{
-
-  background:url("../img/bccontact.jpg");
-  height:520px;
+/* top image on product */
+.top-img-2{
+  display:flex;
+  flex-wrap: wrap;
+  background:url("../img/product.jpg");
+  height:400px;
   width:100%;
   background-position:center center;
-  background-attachment: fixed;
   background-repeat:no-repeat;
   background-size:cover;
 }
 
 
-@media (max-width:800px){
-
+/* top image on contact*/
+.top-img-3{
+  background:url("../img/bccontact2.jpg");
+  height:400px;
+  width:100%;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
+
+
+@media (max-width:657px){
+  .top-img{
+    background:url("../img/bcimage1.jpg");
+    height:350px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+  
+  .top-img-1{
+    background:url("../img/bcabout.jpg");
+    height:350px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+  }
+
+  .top-img-2{
+    background:url("../img/product.jpg");
+    height:350px;
+    width:100%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+
+  .top-img-3{
+    background:url("../img/bccontact2.jpg");
+    height:350px;
+    width:100%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+  
+}
+
+
+
+
+
+
 
 .about-text-2{
   flex-grow: 2;
