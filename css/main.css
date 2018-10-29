@@ -473,7 +473,7 @@ footer{
   
 a.back-button{
   font-size:1rem;
-  font-weight: 550;
+  font-weight: bold;
   color:rgb(80,80,80);
   text-decoration:none;
   padding:1rem;
@@ -823,7 +823,7 @@ ul {
 /*Style for confirmation*/
 .message {
   display: block;
-  margin-top: 4.5rem;
+  margin-top: 10rem;
   margin-bottom:12rem;
   text-align: center;
 }
@@ -1228,6 +1228,18 @@ ul {
   margin-top:3rem;
 }
 
+.block h2{
+  font-size:1.2rem;
+  margin-top:2rem;
+  margin-bottom:0.25rem;
+}
+
+.block h3{
+  color:rgb(90,90,90);
+  font-size:1.1rem;
+  margin-bottom:0.8rem;
+}
+
 .block-box{
   border:0.05rem  solid ;
   border-color:rgb(245,184,16) white;
@@ -1290,7 +1302,7 @@ figcaption{
 
 @media (max-width:680px){
  
-  .checkout-text h5{
+  .checkout-text h3{
     font-size:0.8rem;
   }
   .checkout-text p {
@@ -1376,6 +1388,11 @@ figcaption{
     text-align:center;
   }
 
+  .blockc h2 {
+    color:rgb(90,90,90);
+    font-size:1.1rem;
+    margin-bottom:0;
+    }
 
   .blockc p{
     padding-top:1rem;
@@ -1420,7 +1437,7 @@ figcaption{
     .border-box {
         margin-bottom: 0.6rem;
     }
-    .border-box h5 {
+    .border-box h2 {
         font-size: 0.9rem;
     }
 

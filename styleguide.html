@@ -30,7 +30,7 @@
       </ul>
   
       <!-- dropdown menu -->
-      <nav class="box" id="menu">
+      <nav class="box" id="menutest">
   
           <div class="box-item-nav">
               <a href="index.html" class="button bg active-nav">Home</a>
@@ -64,6 +64,7 @@
           <a href="#interactive_elements" class="intext-link-exp">Interactive Elements</a>
           <a href="#text_elements" class="intext-link-exp">Text Elements</a>
           <a href="#combined_elements" class="intext-link-exp">Combined Elements</a>
+    </div>
     </div>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -148,15 +149,15 @@
         <h4>Sample code</h4>
         <code>&lt;div class="form-element"&gt;</code>
         <code>&lt;label class="container"&gt;Credit Card &lt;/label&gt;</code>
-        <code>&lt;input type="radio" checked="checked" name="radio" value="credit" onclick="show1();"&gt;</code>
+        <code>&lt;input type="radio" checked="checked" name="radio" value="1" onclick="show1();"&gt;</code>
         <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
         <code>&lt;/label&gt;</code>
         <code>&lt;label class="container"&gt;Alipay</code>
-        <code>&lt;input type="radio" name="radio" value="alipay" onclick="show2();"&gt;</code>
+        <code>&lt;input type="radio" name="radio" value="2" onclick="show2();"&gt;</code>
         <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
         <code>&lt;/label&gt;</code>
         <code>&lt;label class="container"&gt;WechatPay</code>
-        <code>&lt;input type="radio" name="radio" value="wechatpay" onclick="show3();"&gt;</code>
+        <code>&lt;input type="radio" name="radio" value=3" onclick="show3();"&gt;</code>
         <code>&lt;span class="checkmark"&gt;&lt;/span&gt;</code>
         <code>&lt;/label&gt;</code>
         <code>&lt;/div&gt;</code>
@@ -165,16 +166,16 @@
         <p>Payment options: </p>
   
         <div class="form-element">
-          <label class="container">Credit Card
-          <input type="radio" checked="checked" name="radio-example" value="credit">
+          <label class="container">radio1
+          <input type="radio" checked="checked" name="radio-example" value="1">
           <span class="checkmark"></span>
           </label>
-          <label class="container">Alipay
-          <input type="radio" name="radio-example" value="alipay">
+          <label class="container">radio2
+          <input type="radio" name="radio-example" value="2">
           <span class="checkmark"></span>
           </label>
-          <label class="container">WechatPay
-          <input type="radio" name="radio-example" value="wechatpay">
+          <label class="container">radio3
+          <input type="radio" name="radio-example" value="3">
           <span class="checkmark"></span>
           </label>
               
@@ -295,7 +296,7 @@
             <code>&lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;</code>
             <code>&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
             <code>&lt;li&gt;&lt;a href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt;</code>
-            <code></ul></code>
+            <code>&lt;/ul&gt;</code>
     
             <code>&lt;nav class="box" id="menu"&gt;</code>
     
@@ -358,6 +359,7 @@
     
         </nav>
       </section>
+    </section>
 
       <!-- pruduct list styling -->
       <section class="element">
@@ -530,23 +532,22 @@
             <h4>Payment Options</h4>
          
        
-             <div class="form-element">
-   
-                
+            <div class="form-element">
               <label class="container label">Credit Card
-              <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
-              <span class="checkmark"></span>
+                  <input type="radio" checked="checked" name="radio" value="credit" onclick="show1();">
+                  <span class="checkmark"></span>
               </label>
               <label class="container label">Alipay
-              <input type="radio" name="radio" value="alipay" onclick="show2();">
-              <span class="checkmark"></span>
+                  <input type="radio" name="radio" value="alipay" onclick="show2();">
+                  <span class="checkmark"></span>
               </label>
               <label class="container label">WechatPay
-              <input type="radio" name="radio" value="wechatpay" onclick="show3();">
-              <span class="checkmark"></span>
+                  <input type="radio" name="radio" value="wechatpay" onclick="show3();">
+                  <span class="checkmark"></span>
               </label>
-            
           </div>
+            
+         
 
           <div id="div1" class="show">
               <div class="form">  
@@ -589,7 +590,7 @@
             Complete payment on phone
         </div>
       </section>
-
+ 
       <!-- checkout cart styling -->
       <section class="element">
         <h3>Checkout Cart</h3>
@@ -602,7 +603,7 @@
         <code>&lt;div class="blockc"&gt; </code>
         <code>&lt;div class="box"&gt; </code> 
         <code>&lt;div class="norder-box"&gt; </code>
-        <code>&lt;figure&gt;&lt;img class="static1" src ="img/c11.jpg" alt = "white chair"&gt;</figure></code> 
+        <code>&lt;figure&gt;&lt;img class="static1" src ="img/c11.jpg" alt = "white chair"&gt;&lt;/figure&gt;</code> 
         <code>&lt;figure&gt;&lt;h5&gt;Lucas Base Chair &lt;/h5&gt;&lt;/figure&gt;</code>
         <code>&lt;figure&gt;&lt;h5&gt;Quantity&lt;/h5&gt;</code>
         <code>&lt;div class="methods form-element"&gt;&lt;/div&gt;</code>
@@ -622,14 +623,14 @@
             <div class="box"> 
              <div class="border-box">
                 <figure><img class = "static1"src ="img/c11.jpg" alt = "Lucas Base chair"></figure> 
-                    <figure><h5>Lucas Base Chair</h5></figure>
-                    <figure><h5>Quantity</h5>
+                    <figure><h2>Lucas Base Chair</h2></figure>
+                    <figure><h2>Quantity</h2>
                         <div class="methods form-element">
-                         <input type="text" placeholder="1" value="1"> 
+                         <input type="text" placeholder="1" value="1">
                         </div> 
                         <a class="remove" href="#">Remove</a>
                     </figure>
-                    <figure><h5>Price</h5>
+                    <figure><h2>Price</h2>
                     <p>$399.99</p>
                 </figure> 
               </div>
@@ -645,25 +646,26 @@
     <section id="written">
 
       <h2>Content</h2>
-    <section class = "brandings">
-      <h3>branding definition</h3>
-      <p>The company is a online shopping company that sells modern chairs of different styles such as home, decoration etcs.
-        By focusing on selling chairs, company aims to provide broader range of choices for consumers to choose.
-        The potential customers of the company various. It can be anyone that likes modern style chairs with decent price and quality. 
-        But mainly,we are targeting towards people who are intereted in stylish and high quality chairs.
-        The company is focusing on a very specified product. However, with in this type, we provide tons of options for customers to
-        choose and compare, not just in general. We offer great deals and nice prices to our customers. 
-      </p>
-    </section>
+      <section class = "brandings">
+        <h3>branding definition</h3>
+        <p>The company is a online shopping company that sells modern chairs of different styles such as home, decoration etcs.
+          By focusing on selling chairs, company aims to provide broader range of choices for consumers to choose.
+          The potential customers of the company various. It can be anyone that likes modern style chairs with decent price and quality. 
+          But mainly,we are targeting towards people who are intereted in stylish and high quality chairs.
+          The company is focusing on a very specified product. However, with in this type, we provide tons of options for customers to
+          choose and compare, not just in general. We offer great deals and nice prices to our customers. 
+        </p>
+      </section>
+  
 
 
-    <!-- branding imagery -->
-    <section class="brand components">
-      <h3>brand components</h3>
-      <div class="style-img"><img src ="img/imagery.jpg" alt ="brand components"></div>
+      <!-- branding imagery -->
+      <section class="brand components">
+        <h3>brand components</h3>
+        <div class="style-img"><img src ="img/imagery.jpg" alt ="brand components"></div>
+      </section>
     </section>
-  </section>
-  </div>
+ 
 
   <!-- footer to include style guide, citation and course information -->
   <footer>
@@ -677,26 +679,27 @@
 
   <script src="js/dropdown.js"></script>
 
+  <script>
+    
+    function show1(){
+        document.getElementById('div1').style.display ='block';
+        document.getElementById('div2').style.display ='none';
+        document.getElementById('div3').style.display ='none';
+    }
+    function show2(){
+        document.getElementById('div1').style.display ='none';
+        document.getElementById('div2').style.display = 'block';
+        document.getElementById('div3').style.display ='none';
+    }
+    function show3(){
+        document.getElementById('div1').style.display ='none';
+        document.getElementById('div2').style.display = 'none';
+        document.getElementById('div3').style.display ='block';
+    }
+    
+  </script>
+
   </body>
 </html>
 
 
-<script>
-    
-  function show1(){
-      document.getElementById('div1').style.display ='block';
-      document.getElementById('div2').style.display ='none';
-      document.getElementById('div3').style.display ='none';
-  }
-  function show2(){
-      document.getElementById('div1').style.display ='none';
-      document.getElementById('div2').style.display = 'block';
-      document.getElementById('div3').style.display ='none';
-  }
-  function show3(){
-      document.getElementById('div1').style.display ='none';
-      document.getElementById('div2').style.display = 'none';
-      document.getElementById('div3').style.display ='block';
-  }
-  
-</script>
