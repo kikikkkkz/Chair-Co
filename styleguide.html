@@ -65,7 +65,6 @@
           <a href="#text_elements" class="intext-link-exp">Text Elements</a>
           <a href="#combined_elements" class="intext-link-exp">Combined Elements</a>
     </div>
-    </div>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
@@ -163,7 +162,7 @@
         <code>&lt;/div&gt;</code>
 
         <h4>Rendered element:</h4>
-        <p>Payment options: </p>
+        <p>Sample Options: </p>
   
         <div class="form-element">
           <label class="container">radio1
@@ -512,10 +511,11 @@
                   
           <code>&lt;div class="methods form-element"&gt;</code>
           <code>&lt;div class="methods form-element col"&gt;</code>
-          <code>&lt;label for="form-exp" class="label"&gt;Expiry Date&lt;/label&gt;</code>
+          <code>&lt;label for="form-exp" class="label"&gt;Expiry Month&lt;/label&gt;</code>
           <code>&lt;input type="text" id="form-exp" placeholder="Jan"&gt;</code>
           <code>&lt;/div&gt;</code>
           <code>&lt;div class="methods form-element col"&gt;</code>
+          <code>&lt;label for="form-expd" class="label"&gt;Year&lt;/label&gt;</code>
           <code>&lt;input type="text" id="form-expd" placeholder="2020"&gt;</code>
           <code>&lt;/div&gt;</code>
           <code>&lt;div class="methods form-element col"&gt;</code>
@@ -527,10 +527,8 @@
                   
 
         <h4>Rendered element:</h4>
-       
         
             <h4>Payment Options</h4>
-         
        
             <div class="form-element">
               <label class="container label">Credit Card
@@ -546,8 +544,6 @@
                   <span class="checkmark"></span>
               </label>
           </div>
-            
-         
 
           <div id="div1" class="show">
               <div class="form">  
@@ -563,10 +559,11 @@
                   
                   <div class="methods form-element">
                       <div class="methods form-element col">
-                          <label for="form-exp" class="label">Expiry Date</label>
+                          <label for="form-exp" class="label">Expiry Month</label>
                           <input type="text" id="form-exp" placeholder="Jan">
                       </div>
                       <div class="methods form-element col">
+                          <label for="form-expd" class="label">Year</label>
                           <input type="text" id="form-expd" placeholder="2020">
                       </div>
                       <div class="methods form-element col">
@@ -626,7 +623,8 @@
                     <figure><h2>Lucas Base Chair</h2></figure>
                     <figure><h2>Quantity</h2>
                         <div class="methods form-element">
-                         <input type="text" placeholder="1" value="1">
+                          <label for="quantity1" class="hide">quantity1</label>
+                          <input type="text" value="1" id="quantity1">
                         </div> 
                         <a class="remove" href="#">Remove</a>
                     </figure>
@@ -657,15 +655,13 @@
         </p>
       </section>
   
-
-
       <!-- branding imagery -->
       <section class="brand components">
         <h3>brand components</h3>
         <div class="style-img"><img src ="img/imagery.jpg" alt ="brand components"></div>
       </section>
     </section>
- 
+  </div>
 
   <!-- footer to include style guide, citation and course information -->
   <footer>
