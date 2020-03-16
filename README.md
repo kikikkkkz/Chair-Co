@@ -1,5 +1,5 @@
 # Chair&Co
-This project is an online shopping website with HTML/CSS and some JavaScript.
+This project is an online shopping website built with HTML/CSS and some JavaScript.
 
 ## Usage
 1. Clone the project using SSH Key.
